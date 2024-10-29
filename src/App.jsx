@@ -43,9 +43,9 @@ const App = () => {
     }, [isMobile])
 
     useEffect(() => {
-        section();
         gsaps();
         gsapAnimation();
+        section();
     }, [])
 	return (
 		<Router>
