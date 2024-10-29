@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Header = (test) => {
+const Header = () => {
   return (
     <header id="header">
       <a href="#main">KIMSANGJUN</a>
