@@ -54,10 +54,10 @@ const App = () => {
 				<AnimatePresence>{ !isVisible ? "" : <NavigationComponents count={loadingCount} func={() => {setIsVisible(!isVisible)}}/> }</AnimatePresence>
                 <AnimatePresence>{ isLoaded ? "" : <LoadingComponents count={loadingCount} /> }</AnimatePresence>
                 <Routes><Route path="/" element={ <Home isMobile={isMobile} data={data} /> } /></Routes>
-                <ProgressComponents />
                 <SkipComponents />
-                <NavigateComponents />
                 <AwardsComponents />
+                {/* <ProgressComponents /> */}
+                {/* <NavigateComponents /> */}
 				{/* <DescFixed /> */}
 			</Main>
 			{/* <Footer /> */}

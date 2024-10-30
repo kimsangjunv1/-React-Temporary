@@ -1,8 +1,5 @@
 import React from "react";
 
-import section2_profile from "./../../assets/img/section2_profile.png";
-import section2_lama from "./../../assets/img/section2_lama.svg";
-
 const Section_02 = () => {
   return (
     // 섹션 2 : 김상준 소개
@@ -20,10 +17,10 @@ const Section_02 = () => {
           <h2 className="fifth_name n7">SANGJUN</h2>
         </div>
         <div className="section2_profile_cont">
-          <img className="section2_profile ir" src={section2_profile} alt="" />
+          <img src="/images/section/02/profile.webp" alt="김상준" className="section2_profile ir" />
         </div>
       </div>
-      <img src={section2_lama} alt="lama" className="lama" />
+      <img src="/images/section/02/lama.webp" alt="라마" className="lama" />
     </section>
   );
 };
