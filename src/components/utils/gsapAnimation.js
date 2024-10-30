@@ -21,18 +21,16 @@ const gsapAnimation = () => {
     transform: "translate(70%,0%) rotate(0deg)",
     duration: 1.5,
   });
-  gsap.to(".dust_04", {
-    scrollTrigger: ".dust_01",
-    transform: "translate(-50%, 0)",
-    // scale: 1,
-    duration: 0.6,
-  });
-  gsap.to(".dust_05", {
-    scrollTrigger: ".dust_01",
-    transform: "translate(-50%, 0)",
-    // scale: 1,
-    duration: 0.6,
-  });
+  // gsap.to(".dust_04", {
+  //   scrollTrigger: ".dust_01",
+  //   transform: "translate(-50%, 0)",
+  //   duration: 0.6,
+  // });
+  // gsap.to(".dust_05", {
+  //   scrollTrigger: ".dust_01",
+  //   transform: "translate(-50%, 0)",
+  //   duration: 0.6,
+  // });
   gsap.to(".dust_07", {
     scrollTrigger: ".dust_01",
     transform: "translate(70%, 0) rotate(0deg)",

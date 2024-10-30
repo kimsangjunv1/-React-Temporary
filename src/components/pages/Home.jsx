@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 // 섹션
-import Section_01 from "@/components/include/Section_01";
+import Section01 from "@/components/include/Section01";
 import Section_02 from "@/components/include/Section_02";
 import Section_03 from "@/components/include/Section_03";
 import Section_03_5 from "@/components/include/Section_03_5";
@@ -23,7 +23,7 @@ import Section_16 from "@/components/include/Section_16";
 const Home = () => {
 	return (
 		<Fragment>
-			<Section_01 />
+			<Section01 />
 			<Section_02 />
 			<Section_03 />
 			<Section_03_5 />
