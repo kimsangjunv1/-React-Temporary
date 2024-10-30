@@ -9,9 +9,8 @@ const Section_09 = () => {
   return (
     // <!-- REACT API TMDB : section9 -->
     <section
-      id="vue&react"
-      style={{ background: "#00244dd4" }}
       className="section vr1 t_vr"
+      style={{ background: "#00244dd4" }}
     >
       <div className="section9_all_cont">
         <img className="section9_lama" src={section9_lama} alt="" />

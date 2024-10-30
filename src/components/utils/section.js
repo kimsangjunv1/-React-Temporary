@@ -5,6 +5,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 const section = () => {
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+    const matchMedia = gsap.matchMedia();
 
     ScrollTrigger.create({
         trigger: ".section5_fixed",
@@ -27,23 +28,7 @@ const section = () => {
         ),
     });
 
-    let mm2 = gsap.matchMedia();
-    mm2.add("(min-width: 700px)", () => {
-        ScrollTrigger.create({
-            trigger: ".bg_change_purple",
-            scrub: 1,
-
-            animation: gsap.fromTo(
-                ".section6p7_title", {
-                    transform: "skew(5deg,5deg) rotate(360deg)",
-                    yPercent: "150",
-                }, {
-                    transform: "skew(37deg, 349deg) rotate(40deg)",
-                    yPercent: "-3000",
-                }
-            ),
-        });
-
+    matchMedia.add("(min-width: 700px)", () => {
         ScrollTrigger.create({
             trigger: ".custom_color_dark",
             scrub: 1,
@@ -164,7 +149,22 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".section6p7_title", {
+                    transform: "skew(5deg,5deg) rotate(360deg)",
+                    yPercent: "150",
+                }, {
+                    transform: "skew(37deg, 349deg) rotate(40deg)",
+                    yPercent: "-3000",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -181,7 +181,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -196,9 +196,9 @@ const section = () => {
                 }
             ),
         });
-        
+
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -215,7 +215,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -232,7 +232,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -249,7 +249,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -265,7 +265,7 @@ const section = () => {
             ),
         });
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -314,7 +314,7 @@ const section = () => {
             ),
         });
         ScrollTrigger.create({
-            trigger: ".bg_change_purple",
+            trigger: "#project",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -341,120 +341,7 @@ const section = () => {
         });
     });
 
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i001", {
-        x: "150%",
-        }),
-        animation: gsap.to(".i001", {
-        x: "-650%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i001 .item_desc", {
-        x: "150%",
-        }),
-        animation: gsap.to(".i001 .item_desc", {
-        x: "-1000%",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i002", {
-        x: "100%",
-        }),
-        animation: gsap.to(".i002", {
-        x: "-400%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i002 .item_desc", {
-        x: "150%",
-        }),
-        animation: gsap.to(".i002 .item_desc", {
-        x: "-1000%",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i003", {
-        x: "120%",
-        }),
-        animation: gsap.to(".i003", {
-        x: "-450%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i003 .item_desc", {
-        x: "150%",
-        }),
-        animation: gsap.to(".i003 .item_desc", {
-        x: "-500%",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i004", {
-        x: "200%",
-        }),
-        animation: gsap.to(".i004", {
-        x: "-450%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i004 .item_desc", {
-        x: "100%",
-        }),
-        animation: gsap.to(".i004 .item_desc", {
-        x: "-700%",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i005", {
-        x: "200%",
-        }),
-        animation: gsap.to(".i005", {
-        x: "-400%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i005 .item_desc", {
-        x: "250%",
-        }),
-        animation: gsap.to(".i005 .item_desc", {
-        x: "-1000%",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i006", {
-        x: "250%",
-        }),
-        animation: gsap.to(".i006", {
-        x: "-250%",
-        }),
-    });
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".i006 .item_desc", {
-        x: "150%",
-        }),
-        animation: gsap.to(".i006 .item_desc", {
-        x: "-300%",
-        }),
-    });
-
+    // 섹션 5
     ScrollTrigger.create({
         scrub: 1,
         animation: gsap.fromTo(
@@ -485,6 +372,7 @@ const section = () => {
         ),
     });
 
+    // 섹션 9 : VUE 프로젝트
     ScrollTrigger.create({
         scrub: 0.1,
         animation: gsap.fromTo(
@@ -847,7 +735,7 @@ const section = () => {
     let mm3 = gsap.matchMedia();
     mm3.add("(min-width: 700px)", () => {
         gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
-        gsap.set("#tractor2", { transformOrigin: "50% 50%" });
+        gsap.set("#fur", { transformOrigin: "50% 50%" });
 
         animation2 = gsap.to("#motionSVG2", {
         scrollTrigger: {

@@ -7,7 +7,7 @@ import Section03 from "@/components/include/Section03";
 import Section04 from "@/components/include/Section04";
 
 import Section_03_5 from "@/components/include/Section_03_5";	// wave
-import Section_05 from "@/components/include/Section_05";
+import Section05 from "@/components/include/Section05";
 import Section_05_5 from "@/components/include/Section_05_5";
 import Section_06 from "@/components/include/Section_06";
 import Section_06_5 from "@/components/include/Section_06_5";
@@ -29,12 +29,12 @@ const Home = ({ isMobile, isLoaded }) => {
 			<Section03 isLoaded={isLoaded}/>
 			<Section_03_5 />
 			<Section04 />
-
-			<Section_05 />
+			<Section05 />
 			<Section_05_5 />
+
 			<Section_06 />
 			<Section_06_5 />
-			<Section_07 />
+			<Section_07 isLoaded={isLoaded}/>
 			<Section_09 />
 			<Section_10 />
 			<Section_11 />

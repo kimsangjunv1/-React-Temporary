@@ -436,101 +436,88 @@ const section = () => {
     let mm2 = gsap.matchMedia();
     mm2.add("(min-width: 700px)", () => {
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".section6p7_title",
-            {
-            transform: "skew(5deg,5deg) rotate(360deg)",
-            yPercent: "150",
-            },
-            {
-            transform: "skew(37deg, 349deg) rotate(40deg)",
-            yPercent: "-3000",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".section6p5_title",
-            {
-            transform: "skew(5deg,5deg) rotate(360deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(37deg, 349deg) rotate(60deg)",
-            yPercent: "500",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s5p5_1",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_01_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".section6p5_title",
+                {
+                transform: "skew(5deg,5deg) rotate(360deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(37deg, 349deg) rotate(60deg)",
+                yPercent: "500",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s5p5_4",
-            {
-            transform: "skew(19deg, 10deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(10deg, 29deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".s5p5_1",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 334deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
 
-        animation: gsap.fromTo(
-            ".site_type_02_desc",
-            {
-            transform: "skew(340deg, 360deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(360deg, 340deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
+        ScrollTrigger.create({
+            trigger: ".custom_color_dark",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_01_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".custom_color_dark",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s5p5_4",
+                {
+                transform: "skew(19deg, 10deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(10deg, 29deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".custom_color_dark",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_02_desc",
+                {
+                transform: "skew(340deg, 360deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(360deg, 340deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
@@ -567,52 +554,71 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".bg_change_purple",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_1",
-            {
-            transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
-            yPercent: "-1500",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".section6p7_title",
+                {
+                    transform: "skew(5deg,5deg) rotate(360deg)",
+                    yPercent: "150",
+                },
+                {
+                    transform: "skew(37deg, 349deg) rotate(40deg)",
+                    yPercent: "-3000",
+                }
+            ),
         });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_2",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_1",
+                {
+                    transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
+                    yPercent: "100",
+                },
+                {
+                    transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
+                    yPercent: "-1500",
+                }
+            ),
         });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
 
-        animation: gsap.fromTo(
-            ".site_type_04_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_2",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 334deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_04_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({

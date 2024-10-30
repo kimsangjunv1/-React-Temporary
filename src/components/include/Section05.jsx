@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Animation from "@/components/utils/animation";
 
 import section5_lama_fly from "./../../assets/img/section5_lama_fly.svg";
 import section5_lama_top from "./../../assets/img/section5_lama_top.svg";
@@ -8,7 +9,10 @@ import section5_screenshot_03 from "./../../assets/img/section5_screenshot_03.sv
 import section5_screenshot_04 from "./../../assets/img/section5_screenshot_04.svg";
 import section5_screenshot_05 from "./../../assets/img/section5_screenshot_05.svg";
 
-const Section_05 = () => {
+const Section05 = () => {
+  // useEffect(() => {
+  //   Animation.section05.default();
+  // }, [])
   return (
     // <!-- 섹션 5 : DOCS -->
     <section id="reference" className="horizontal2 custom_color pin4">
@@ -187,4 +191,4 @@ const Section_05 = () => {
   );
 };
 
-export default Section_05;
+export default Section05;

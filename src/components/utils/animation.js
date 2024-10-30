@@ -472,30 +472,30 @@ class Animation {
             ScrollTrigger.create({
                 scrub: 1,
                 animation: gsap.from(".section3_item_bottom", {
-                transform: "translatex(0%)",
+                transform: "translateX(0%)",
                 }),
                 animation: gsap.to(".section3_item_bottom", {
-                transform: "translatex(-50%)",
+                transform: "translateX(-50%)",
                 }),
             });
         
             ScrollTrigger.create({
                 scrub: 1,
                 animation: gsap.from(".section3_item_bottom2", {
-                transform: "translatex(0%) scalex(-1)",
+                    transform: "translateX(0%) scale(1.05)",
                 }),
                 animation: gsap.to(".section3_item_bottom2", {
-                transform: "translatex(-30%) scalex(-1)",
+                    transform: "translateX(-20%) scale(1.05)",
                 }),
             });
         
             ScrollTrigger.create({
                 scrub: 1,
                 animation: gsap.from(".section3_fixed", {
-                opacity: 1,
+                    opacity: 1,
                 }),
                 animation: gsap.to(".section3_fixed", {
-                opacity: 0.3,
+                    opacity: 0.3,
                 }),
             });
         
@@ -518,6 +518,127 @@ class Animation {
                     transform: "translate(-50%, -50%)",
                 }
                 ),
+            });
+
+            // -----------------------
+
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i001", {
+                    x: "150%",
+                }),
+                animation: gsap.to(".i001", {
+                    x: "-650%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i001 .item_desc", {
+                    x: "150%",
+                }),
+                animation: gsap.to(".i001 .item_desc", {
+                    x: "-1000%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i002", {
+                    x: "100%",
+                }),
+                animation: gsap.to(".i002", {
+                    x: "-400%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i002 .item_desc", {
+                x: "150%",
+                }),
+                animation: gsap.to(".i002 .item_desc", {
+                x: "-1000%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i003", {
+                x: "120%",
+                }),
+                animation: gsap.to(".i003", {
+                x: "-450%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i003 .item_desc", {
+                x: "150%",
+                }),
+                animation: gsap.to(".i003 .item_desc", {
+                x: "-500%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i004", {
+                x: "200%",
+                }),
+                animation: gsap.to(".i004", {
+                x: "-450%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i004 .item_desc", {
+                x: "100%",
+                }),
+                animation: gsap.to(".i004 .item_desc", {
+                x: "-700%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i005", {
+                x: "200%",
+                }),
+                animation: gsap.to(".i005", {
+                x: "-400%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i005 .item_desc", {
+                x: "250%",
+                }),
+                animation: gsap.to(".i005 .item_desc", {
+                x: "-1000%",
+                }),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i006", {
+                x: "250%",
+                }),
+                animation: gsap.to(".i006", {
+                x: "-250%",
+                }),
+            });
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".i006 .item_desc", {
+                x: "150%",
+                }),
+                animation: gsap.to(".i006 .item_desc", {
+                x: "-300%",
+                }),
             });
         }
     }
@@ -562,6 +683,247 @@ class Animation {
                     });
                 }
                 },
+            });
+        }
+    }
+
+    static section05 = {
+        init: () => {
+
+        },
+
+        default: () => {
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                ".lama_fur_test",
+                {
+                    rotate: "-100",
+                    x: "-4000",
+                    y: "2500",
+                },
+                {
+                    rotate: "+=150",
+                    x: "3000",
+                    y: "-1000",
+                }
+                ),
+            });
+        
+            ScrollTrigger.create({
+                scrub: 0.1,
+                animation: gsap.fromTo(
+                ".lama_fur_top",
+                {
+                    y: "-800",
+                },
+                {
+                    y: "100",
+                }
+                ),
+            });
+        }
+    }
+
+    static section07 = {
+        init: () => {
+
+        },
+
+        default: () => {
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".section6p7_title", {
+                        transform: "skew(5deg,5deg) rotate(360deg)",
+                        yPercent: "150",
+                    }, {
+                        transform: "skew(37deg, 349deg) rotate(40deg)",
+                        yPercent: "-3000",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_1",
+                    {
+                    transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
+                    yPercent: "-1500",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_2",
+                    {
+                    transform: "skew(346deg, 354deg) rotate(340deg)",
+                    yPercent: "50",
+                    },
+                    {
+                    transform: "skew(336deg, 334deg) rotate(20deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".site_type_04_desc",
+                    {
+                    transform: "skew(0deg, 0deg) rotate(340deg)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(3deg, 3deg) rotate(10deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_4",
+                    {
+                    transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
+                    yPercent: "-1500",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".site_type_05_desc",
+                    {
+                    transform: "skew(0deg, 0deg) rotate(340deg)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(3deg, 3deg) rotate(10deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_7",
+                    {
+                    transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
+                    yPercent: "-1500",
+                    }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".site_type_06_desc",
+                    {
+                    transform: "skew(340deg, 340deg) rotate(340deg)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(0deg, 0deg) rotate(10deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: ".s6p5_10",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_10",
+                    {
+                    transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
+                    yPercent: "50",
+                    },
+                    {
+                    transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: ".s6p5_10",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".s6p5_11",
+                    {
+                    transform: "skew(346deg, 354deg) rotate(340deg)",
+                    yPercent: "50",
+                    },
+                    {
+                    transform: "skew(336deg, 344deg) rotate(20deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
+    
+                animation: gsap.fromTo(
+                    ".site_type_07_desc",
+                    {
+                    transform: "skew(0deg, 0deg) rotate(210deg)",
+                    yPercent: "100",
+                    },
+                    {
+                    transform: "skew(3deg, 3deg) rotate(360deg)",
+                    yPercent: "0",
+                    }
+                ),
+            });
+    
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.from(".ball_cont", {
+                    y: -7500,
+                }),
+                animation: gsap.to(".ball_cont", {
+                    y: 800,
+                }),
             });
         }
     }

@@ -13,7 +13,7 @@ const Section03 = ({ isLoaded }) => {
   useEffect(() => {
     // Animation.section03.init();
     Animation.section03.default();
-}, [isLoaded])
+  }, [isLoaded])
   return (
     <section id="javascript" className="horizontal">
       <div className="section3_fixed">
