@@ -1,8 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
 
 import section4_lama from "./../../assets/img/section4_lama.svg";
+import Animation from "@/components/utils/animation";
 
-const Section_04 = () => {
+const Section04 = () => {
+  useEffect(() => {
+      Animation.section04.default();
+  }, [])
   return (
     // <!-- 섹션 4 : 게임 이펙트 -->
     <section id="game" className="section point custom_color">
@@ -133,4 +137,4 @@ const Section_04 = () => {
   );
 };
 
-export default Section_04;
+export default Section04;

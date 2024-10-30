@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Animation from "@/components/utils/animation";
 
 import section3_img_bottom from "./../../assets/img/section3_img_bottom.svg";
 import section3_img_001 from "./../../assets/img/section3_img_001.jpg";
@@ -8,7 +9,11 @@ import section3_img_004 from "./../../assets/img/section3_img_004.jpg";
 import section3_img_005 from "./../../assets/img/section3_img_005.jpg";
 import section3_img_006 from "./../../assets/img/section3_img_006.jpg";
 
-const Section_03 = () => {
+const Section03 = ({ isLoaded }) => {
+  useEffect(() => {
+    // Animation.section03.init();
+    Animation.section03.default();
+}, [isLoaded])
   return (
     <section id="javascript" className="horizontal">
       <div className="section3_fixed">
@@ -169,4 +174,4 @@ const Section_03 = () => {
   );
 };
 
-export default Section_03;
+export default Section03;

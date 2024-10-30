@@ -7,402 +7,6 @@ const section = () => {
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
     ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_01",
-        {
-            transform: "translate(-50%,0%) rotate(0deg)",
-        },
-        {
-            transform: "translate(-50%,1020%) scale(3.0) rotate(200deg)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-            ".dust_02",
-            {
-                transform: "translate(-50%,0) rotate(0deg)",
-            },
-            {
-                transform: "translate(-500%,-120%) scale(4.0) rotate(200deg)",
-                filter: "blur(6px)",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_03",
-        {
-            transform: "translate(70%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
-            filter: "blur(5px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_07",
-        {
-            transform: "translate(70%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(300%,-50%) scale(1.5) rotate(200deg)",
-            filter: "blur(3px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_08",
-        {
-            transform: "translate(-60%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
-            filter: "blur(3px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_09",
-        {
-            transform: "translate(70%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(300%,-50%) scale(1.5) rotate(200deg)",
-            filter: "blur(3px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_10",
-        {
-            transform: "translate(-60%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
-            filter: "blur(3px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".dust_11",
-        {
-            transform: "translate(-60%,0) rotate(0deg)",
-        },
-        {
-            transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
-            filter: "blur(3px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".section1_desc h2",
-        {
-            height: "27.2vw",
-        },
-        {
-            height: "0vw",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".section .lama",
-        {
-            right: "-300px",
-        },
-        {
-            right: "0px",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n1",
-        {
-            scale: (1.4, 1.4),
-            opacity: 0,
-            transformOrigin: "1300px 18px",
-            transform: "translate(0,50px)",
-            filter: "blur(15px)",
-        },
-        {
-            scale: 1,
-            opacity: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-30px,0)",
-            filter: "blur(0px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n2",
-        {
-            scale: (1.3, 1.3),
-            opacity: 0,
-            transformOrigin: "900px 18px",
-            transform: "translate(0,50px)",
-            filter: "blur(7px)",
-        },
-        {
-            scale: 1,
-            opacity: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-            filter: "blur(0px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n3",
-        {
-            scale: (1.3, 1.3),
-            opacity: 0,
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-            filter: "blur(2px)",
-        },
-        {
-            scale: 1,
-            opacity: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-            filter: "blur(0px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n4",
-        {
-            scale: (1.3, 1.3),
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-        },
-        {
-            scale: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n5",
-        {
-            scale: (1.3, 1.3),
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-        },
-        {
-            scale: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n6",
-        {
-            scale: (1.3, 1.3),
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-        },
-        {
-            scale: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".n7",
-        {
-            scale: (1.3, 1.3),
-            opacity: 0,
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-            filter: "blur(4px)",
-        },
-        {
-            scale: 1,
-            opacity: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-            filter: "blur(0px)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section2_cont",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".section2_profile_cont",
-        {
-            scale: (1.3, 1.3),
-            transformOrigin: "500px 18px",
-            transform: "translate(0,50px)",
-        },
-        {
-            scale: 1,
-            transformOrigin: "50% 0%",
-            transform: "translate3d(0,-25px,0)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".section3_item_bottom", {
-        transform: "translatex(0%)",
-        }),
-        animation: gsap.to(".section3_item_bottom", {
-        transform: "translatex(-50%)",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".section3_item_bottom2", {
-        transform: "translatex(0%) scalex(-1)",
-        }),
-        animation: gsap.to(".section3_item_bottom2", {
-        transform: "translatex(-30%) scalex(-1)",
-        }),
-    });
-
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".section3_fixed", {
-        opacity: 1,
-        }),
-        animation: gsap.to(".section3_fixed", {
-        opacity: 0.3,
-        }),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section3_fixed",
-        scrub: 1,
-        animation: gsap.fromTo(
-        ".section3_fixed",
-        {
-            scale: (1.3, 1.3),
-            opacity: 0,
-            transformOrigin: "900px 18px",
-            transform: "translate(-50%, -50%)",
-        },
-        {
-            scale: 1,
-            opacity: 1,
-            transformOrigin: "50% 0%",
-            translate3d: "0,-25px,0",
-            transform: "translate(-50%, -50%)",
-        }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".section4_fixed",
-        scrub: 1,
-        animation: gsap.from(".section4_fixed", {
-        scale: (1.3, 1.3),
-        opacity: 0,
-        transformOrigin: "900px 18px",
-        transform: "translate(0,50px)",
-        }),
-        animation: gsap.to(".section4_fixed", {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
-        }),
-    });
-
-    let proxy = { skew: 0 },
-        skewSetter = gsap.quickSetter(".section4_cont>div", "skewY", "deg"), // fast
-        clamp = gsap.utils.clamp(-10, 10);
-
-    ScrollTrigger.create({
-        onUpdate: (self) => {
-        let skew = clamp(self.getVelocity() / -300);
-
-        if (Math.abs(skew) > Math.abs(proxy.skew)) {
-            proxy.skew = skew;
-            gsap.to(proxy, {
-            skew: 0,
-            duration: 0.8,
-            ease: "power3",
-            overwrite: true,
-            onUpdate: () => skewSetter(proxy.skew),
-            });
-        }
-        },
-    });
-
-    ScrollTrigger.create({
         trigger: ".section5_fixed",
         scrub: 1,
         animation: gsap.fromTo(
@@ -423,321 +27,317 @@ const section = () => {
         ),
     });
 
-    ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".section3_item_bottom", {
-        transform: "translatex(0%)",
-        }),
-        animation: gsap.to(".section3_item_bottom", {
-        transform: "translatex(-50%)",
-        }),
-    });
-
     let mm2 = gsap.matchMedia();
     mm2.add("(min-width: 700px)", () => {
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".bg_change_purple",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".section6p7_title",
-            {
-            transform: "skew(5deg,5deg) rotate(360deg)",
-            yPercent: "150",
-            },
-            {
-            transform: "skew(37deg, 349deg) rotate(40deg)",
-            yPercent: "-3000",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".section6p5_title",
-            {
-            transform: "skew(5deg,5deg) rotate(360deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(37deg, 349deg) rotate(60deg)",
-            yPercent: "500",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s5p5_1",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_01_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".section6p7_title", {
+                    transform: "skew(5deg,5deg) rotate(360deg)",
+                    yPercent: "150",
+                }, {
+                    transform: "skew(37deg, 349deg) rotate(40deg)",
+                    yPercent: "-3000",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s5p5_4",
-            {
-            transform: "skew(19deg, 10deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(10deg, 29deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_02_desc",
-            {
-            transform: "skew(340deg, 360deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(360deg, 340deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".section6p5_title",
+                {
+                transform: "skew(5deg,5deg) rotate(360deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(37deg, 349deg) rotate(60deg)",
+                yPercent: "500",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s5p5_7",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".custom_color_dark",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_03_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".s5p5_1",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 334deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_1",
-            {
-            transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
-            yPercent: "-1500",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_2",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_04_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".site_type_01_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_4",
-            {
-            transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
-            yPercent: "-1500",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_05_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".s5p5_4",
+                {
+                transform: "skew(19deg, 10deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(10deg, 29deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_7",
-            {
-            transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
-            yPercent: "-1500",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_06_desc",
-            {
-            transform: "skew(340deg, 340deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(0deg, 0deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".site_type_02_desc",
+                {
+                transform: "skew(340deg, 360deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(360deg, 340deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        trigger: ".s6p5_10",
-        scrub: 1,
+            trigger: ".custom_color_dark",
+            scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_10",
-            {
-            transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".s6p5_10",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_11",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 344deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-        });
-        ScrollTrigger.create({
-        trigger: ".bg_change_purple",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_07_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(210deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(360deg)",
-            yPercent: "0",
-            }
-        ),
+            animation: gsap.fromTo(
+                ".s5p5_7",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 334deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
         });
 
         ScrollTrigger.create({
-        scrub: 1,
-        animation: gsap.from(".ball_cont", {
-            y: -7500,
-        }),
-        animation: gsap.to(".ball_cont", {
-            y: 800,
-        }),
+            trigger: ".custom_color_dark",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_03_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_1",
+                {
+                transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
+                yPercent: "-1500",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_2",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 334deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+        
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_04_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_4",
+                {
+                transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
+                yPercent: "-1500",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_05_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_7",
+                {
+                transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
+                yPercent: "-1500",
+                }
+            ),
+        });
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_06_desc",
+                {
+                transform: "skew(340deg, 340deg) rotate(340deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(0deg, 0deg) rotate(10deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            trigger: ".s6p5_10",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_10",
+                {
+                transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
+                yPercent: "0",
+                }
+            ),
+        });
+        ScrollTrigger.create({
+            trigger: ".s6p5_10",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".s6p5_11",
+                {
+                transform: "skew(346deg, 354deg) rotate(340deg)",
+                yPercent: "50",
+                },
+                {
+                transform: "skew(336deg, 344deg) rotate(20deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+        ScrollTrigger.create({
+            trigger: ".bg_change_purple",
+            scrub: 1,
+
+            animation: gsap.fromTo(
+                ".site_type_07_desc",
+                {
+                transform: "skew(0deg, 0deg) rotate(210deg)",
+                yPercent: "100",
+                },
+                {
+                transform: "skew(3deg, 3deg) rotate(360deg)",
+                yPercent: "0",
+                }
+            ),
+        });
+
+        ScrollTrigger.create({
+            scrub: 1,
+            animation: gsap.from(".ball_cont", {
+                y: -7500,
+            }),
+            animation: gsap.to(".ball_cont", {
+                y: 800,
+            }),
         });
     });
 

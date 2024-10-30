@@ -2,10 +2,11 @@ import { Fragment } from "react";
 
 // 섹션
 import Section01 from "@/components/include/Section01";
-import Section_02 from "@/components/include/Section_02";
-import Section_03 from "@/components/include/Section_03";
-import Section_03_5 from "@/components/include/Section_03_5";
-import Section_04 from "@/components/include/Section_04";
+import Section02 from "@/components/include/Section02";
+import Section03 from "@/components/include/Section03";
+import Section04 from "@/components/include/Section04";
+
+import Section_03_5 from "@/components/include/Section_03_5";	// wave
 import Section_05 from "@/components/include/Section_05";
 import Section_05_5 from "@/components/include/Section_05_5";
 import Section_06 from "@/components/include/Section_06";
@@ -20,14 +21,15 @@ import Section_14 from "@/components/include/Section_14";
 import Section_15 from "@/components/include/Section_15";
 import Section_16 from "@/components/include/Section_16";
 
-const Home = () => {
+const Home = ({ isMobile, isLoaded }) => {
 	return (
 		<Fragment>
 			<Section01 />
-			<Section_02 />
-			<Section_03 />
+			<Section02 />
+			<Section03 isLoaded={isLoaded}/>
 			<Section_03_5 />
-			<Section_04 />
+			<Section04 />
+
 			<Section_05 />
 			<Section_05_5 />
 			<Section_06 />

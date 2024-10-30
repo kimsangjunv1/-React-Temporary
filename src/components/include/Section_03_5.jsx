@@ -1,5 +1,3 @@
-import React from "react";
-
 const Section_03_5 = () => {
   return (
     // <!-- 섹션 3.5 : 자바스크립트 이펙트와 게임 이펙트 사이 공간 -->
