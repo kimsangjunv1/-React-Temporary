@@ -1,11 +1,10 @@
-import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
+// 먼지&캐릭터
 const gsapAnimation = () => {
   gsap.registerPlugin(ScrollTrigger);
-  // 먼지&캐릭터
-  // function animation() {
+
   gsap.to(".dust_01", {
     scrollTrigger: ".dust_01",
     transform: "translate(-50%,0%)",
@@ -21,16 +20,6 @@ const gsapAnimation = () => {
     transform: "translate(70%,0%) rotate(0deg)",
     duration: 1.5,
   });
-  // gsap.to(".dust_04", {
-  //   scrollTrigger: ".dust_01",
-  //   transform: "translate(-50%, 0)",
-  //   duration: 0.6,
-  // });
-  // gsap.to(".dust_05", {
-  //   scrollTrigger: ".dust_01",
-  //   transform: "translate(-50%, 0)",
-  //   duration: 0.6,
-  // });
   gsap.to(".dust_07", {
     scrollTrigger: ".dust_01",
     transform: "translate(70%, 0) rotate(0deg)",

@@ -43,10 +43,13 @@ const App = () => {
     }, [isMobile])
 
     useEffect(() => {
-        gsaps();
-        gsapAnimation();
-        section();
-    }, [])
+        if (isLoaded) {
+            gsaps();            // 가로 & 상단바
+            gsapAnimation();    // 인트로 전용 애니메이션
+            section();          // 핵심
+        }
+        console.log("isLoaded : ",isLoaded)
+    }, [isLoaded])
 	return (
 		<Router>
             <Header isMobile={isMobile} isVisible={isVisible} func={() => {setIsVisible(!isVisible)}}/>

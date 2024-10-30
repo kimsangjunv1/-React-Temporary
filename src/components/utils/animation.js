@@ -5,7 +5,7 @@ import Lenis from "lenis";
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSPlugin);
 
 class Animation {
-    //w 기본 레이아웃
+    // 기본 레이아웃
     static layout = {
         header: (target) => {
             const sections = gsap.utils.toArray(".marquee .content");
@@ -81,7 +81,7 @@ class Animation {
         progress: () => {}
     }
 
-    //w 섹션 1 : 인사말
+    // 섹션 1 : 인사말
     static section01 = {
         // 스크롤 할때
         scroll: (target) => {
@@ -246,7 +246,7 @@ class Animation {
         }
     }
 
-    //w 섹션 2 : 인터뷰
+    // 섹션 2 : 인터뷰
     static section03(target) {
         const sections = gsap.utils.toArray("#about .item");
 
@@ -302,7 +302,7 @@ class Animation {
         );
     }
 
-    //w 섹션 3 : 사용 가능 기술
+    // 섹션 3 : 사용 가능 기술
     static section04(target, isMobile) {
         const title = gsap.utils.toArray("#skill .title");
 
@@ -496,7 +496,7 @@ class Animation {
         });
     }
 
-    //w 섹션 4 : 경력
+    // 섹션 4 : 경력
     static section041(target) {
         const sections = gsap.utils.toArray("#career .item section div");
 
@@ -523,7 +523,7 @@ class Animation {
         
     }
 
-    //w 섹션 6 : 공부
+    // 섹션 6 : 공부
     static section05() {
         let proxy = { skew: 0 },
         skewSetter = gsap.quickSetter("#education .contents .item", "skewY", "deg"), // fast
@@ -548,7 +548,7 @@ class Animation {
         });
     }
 
-    //w 섹션 7 : 프로젝트
+    // 섹션 7 : 프로젝트
     static section06() {
         const elementLogos = gsap.utils.toArray("#projects .logo");
         const elementSlides = gsap.utils.toArray("#projects .item");
@@ -648,7 +648,7 @@ class Animation {
         });
     }
 
-    //w 가로 스크롤 전용
+    // 가로 스크롤 전용
     static sectionHorizontal(target) {
         const sections = gsap.utils.toArray(".horizontal > section");
         gsap.to(sections, {
@@ -664,7 +664,7 @@ class Animation {
         });
     }
 
-    //w 가로 스크롤 전용
+    // 가로 스크롤 전용
     static sectionHorizontalTest(target) {
         const sections = gsap.utils.toArray("#skill > section");
 
