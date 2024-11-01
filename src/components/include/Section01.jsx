@@ -24,8 +24,6 @@ const Section01 = () => {
                 <img className="ir dust_11" src="/images/section/01/main_dust_03.webp" alt="먼지 3" />
                 <img className="ir dust_07" src="/images/section/01/main_dust_04.webp" alt="먼지 4" />
                 <img className="ir dust_08" src="/images/section/01/main_dust_05.webp" alt="먼지 5" />
-
-                <img className="ir dust_06" src="/images/section/01/main_lama_back_00.webp" alt="메인 뒷배경 3" loading="lazy" />
             </section>
         </section>
     );
