@@ -29,6 +29,7 @@ article {
             
         }
 
+        .list,
         .info {
             position: absolute;
             top: 50%;
@@ -51,16 +52,21 @@ article {
             }
         }
 
-        // .list {
-        //     flex-direction: column;
-        //     gap: 2.2rem;
+        .list {
+            flex-direction: column;
+            gap: 2.2rem;
 
-        //     > button {
-        //         font-family: 'Galmuri11';
-        //         padding: 0.4rem 0.8rem;
-        //         background: black;
-        //         color: white;
-        //     }
-        // }
+            > a {
+                color: black;
+            }
+
+            > button {
+                font-family: 'Galmuri11';
+                padding: 0.4rem 0.8rem;
+                background: black;
+                color: white;
+                cursor: pointer;
+            }
+        }
     }
 }

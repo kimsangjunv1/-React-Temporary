@@ -1,18 +1,3 @@
-html,
-body {
-	max-width: 100%;
-	// overflow-x: hidden;
-	position: relative;
-}
-body {
-	background-color: #161c29;
-	overflow: hidden;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 .bglinear {
 	width: 100%;
 	height: 100vh;
@@ -23,49 +8,18 @@ body {
 	z-index: -1;
 	transition: all 0.1s ease;
 	perspective: 1px;
-}
-.bglinear span {
-	color: transparent;
-	font-size: 122px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-background-clip: text;
-	-webkit-text-stroke: 2px #858585;
-	backface-visibility: none;
-}
 
-#progress {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background: #161c29;
-	z-index: 100000;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	user-select: none;
-	backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blure(30px);
-}
-#progress h2 {
-	font-size: 3.4vw;
-	font-weight: 100;
-	text-transform: uppercase;
-	font-weight: 100;
-	line-height: 0.7;
-}
-.progress-text {
-	font-size: 5.5vw;
-	font-weight: 900;
-	color: #0000;
-	background: linear-gradient(45deg, rgb(20, 240, 66) 26%, #b7ff00 100%);
-	-webkit-background-clip: text;
-	filter: drop-shadow(0px 0px 26px #b7ff004d);
+	&span {
+		color: transparent;
+		font-size: 122px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-background-clip: text;
+		-webkit-text-stroke: 2px #858585;
+		backface-visibility: none;
+	}
 }
 
 .st0 {
@@ -189,11 +143,11 @@ body {
 	position: relative;
 }
 
-.section {
-	height: 100vh;
-	width: 100%;
-	position: relative;
-}
+// .section {
+// 	height: 100vh;
+// 	width: 100%;
+// 	position: relative;
+// }
 
 .polygon {
 	z-index: 1;
@@ -208,13 +162,6 @@ body {
 	max-width: 100%;
 	-webkit-clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
 	clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
-}
-.close {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	z-index: 1000;
-	width: 71px;
 }
 .porfolio_desc_fixed {
 	position: fixed;
@@ -249,52 +196,6 @@ body {
 	position: relative !important;
 	height: 210vw !important;
 	overflow: hidden;
-}
-
-#main {
-	#progress {
-		.icon_cont {
-			position: relative;
-			img {
-				transition: all 0.25s;
-				position: absolute;
-				opacity: 0.2;
-				&:nth-child(1) {
-					top: -10vw;
-					left: 2.2vw;
-					rotate: 20deg;
-				}
-				&:nth-child(2) {
-					top: -20vw;
-					left: -42vw;
-					transform: scale(1.5);
-					filter: blur(2px);
-					rotate: 40deg;
-				}
-				&:nth-child(3) {
-					top: 7vw;
-					left: 22.2vw;
-					filter: blur(1px);
-					// opacity: 0.8;
-					rotate: 60deg;
-				}
-				&:nth-child(4) {
-					top: 15vw;
-					left: -24.799999999999997vw;
-					filter: blur(2px);
-					/* opacity: 0.8; */
-					rotate: 80deg;
-				}
-				&:nth-child(5) {
-					top: 6vw;
-					left: -50vw;
-					filter: blur(3px);
-					/* opacity: 0.8; */
-					rotate: 100deg;
-				}
-			}
-		}
-	}
 }
 
 .lama_loading {
@@ -372,12 +273,52 @@ body {
 .divider {
 	background: #fff;
 	height: 20vh !important;
-  
+
 	&.type- {
-	  &01 {
-		position: relative;
-		background: #fff;
-		height: 20vh !important;
-	  }
+		&01 {
+			position: relative;
+			background: #fff;
+			height: 20vh !important;
+		}
 	}
-  }
+}
+
+
+/* 이미지 대체(ir) */
+.ir {
+	display: block;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+
+/* 블라인드 효과 */
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+/* 스킵 메뉴 */
+#skip {
+	position: relative;
+	z-index: 100000;
+
+	&a {
+		background: #000;
+		color: #fff;
+		position: absolute;
+		padding: 20px 40px;
+		left: -400px;
+		top: 5px;
+
+		&:active,
+		&:focus {
+			left: 5px;
+		}
+	}
+}

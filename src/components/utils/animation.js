@@ -9,54 +9,85 @@ class Animation {
     static layout = {
         header: (target) => {
             // Marquee 효과
-            const sections = gsap.utils.toArray(".marquee .content");
-            for(let i = 0; i <= sections.length - 1; i++ ) {
-                gsap.to(sections[i], {
-                    xPercent: -100,
-                    repeat: -1,
-                    duration: 70,
-                    ease: "linear",
-                    modifiers: {
-                        xPercent: gsap.utils.wrap(-100, 0)
-                    }
-                });
-            };
+            // const sections = gsap.utils.toArray(".marquee .content");
+
+            // for(let i = 0; i <= sections.length - 1; i++ ) {
+            //     gsap.to(sections[i], {
+            //         xPercent: -100,
+            //         repeat: -1,
+            //         duration: 70,
+            //         ease: "linear",
+            //         modifiers: {
+            //             xPercent: gsap.utils.wrap(-100, 0)
+            //         }
+            //     });
+            // };
 
             // 로고 반복 애니메이션
-            gsap.fromTo("#header .logo a img",{
-                opacity: 0.8,
-            },{
-                opacity: 1,
-                // rotate: 720,
-                repeat: -1,
-                duration: 0.5,
-                ease: "power1.inout",
-                yoyo: true,
-            });
+            // gsap.fromTo("#header .logo a img",{
+            //     opacity: 0.8,
+            // },{
+            //     opacity: 1,
+            //     // rotate: 720,
+            //     repeat: -1,
+            //     duration: 0.5,
+            //     ease: "power1.inout",
+            //     yoyo: true,
+            // });
 
             // 각 섹션별 DOM
-            const conatinerSkill = document.querySelector("#skill");
-            const containerEducation = document.querySelector("#education");
+            // const conatinerJavascript = document.querySelector("#javascript");
 
             ScrollTrigger.create({
-                trigger: "#education", // 트리거할 섹션을 #skill로 설정
-                start: () => "+=" + conatinerSkill.offsetWidth,
-                end: () => "+=" + containerEducation.offsetHeight,
+                trigger: "#game",
+                scrub: 0,
+                start: () => "+=" + 5000,
+                endTrigger: "#reference", // #skill이 화면에 닿을 때 종료
+                end: () => "+=" + 16500,
                 onEnter: () => {
-                  gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                  gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeave: () => {
-                  gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                  gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 },
                 onEnterBack: () => {
-                  gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                  gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeaveBack: () => {
-                  gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                  gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                }
+            });
+
+            // 트리거 : 모든 프로젝트부터
+            ScrollTrigger.create({
+                trigger: "#amount",
+                scrub: 0,
+                start: () => "+=" + 16000,
+                endTrigger: "#amount", // #skill이 화면에 닿을 때 종료
+                end: () => "+=" + 1000,
+                onEnter: () => {
+                    console.log("amount들어옴");
+                    gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                },
+                onLeave: () => {
+                    console.log("amount나감")
+                    gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                },
+                onEnterBack: () => {
+                    console.log("amount다시들옴")
+                    gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                },
+                onLeaveBack: () => {
+                    console.log("amount다시나감")
+                    gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
+                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 }
             });
         },
@@ -83,7 +114,7 @@ class Animation {
         progress: () => {}
     }
 
-    // 섹션 1 : 인사말
+    // 섹션 1 : 인트로
     static section01 = {
         // 초기 애니메이션
         init : () => {
@@ -132,7 +163,7 @@ class Animation {
         // 기본 애니메이션
         default: () => {
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_01",
@@ -146,7 +177,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                     ".dust_02",
@@ -161,7 +192,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_03",
@@ -176,7 +207,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_07",
@@ -191,7 +222,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_08",
@@ -206,7 +237,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_09",
@@ -221,7 +252,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_10",
@@ -236,7 +267,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".dust_11",
@@ -251,24 +282,20 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
-                ".section1_desc h2",
-                {
-                    height: "27.2vw",
-                },
-                {
-                    height: "0vw",
-                }
+                    ".section1_desc h2",
+                    { translateY: "-30%" },
+                    { translateY: "100%", filter: "blur(20px)" }
                 ),
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
-                ".section .lama",
+                "#profile .lama",
                 {
                     right: "-300px",
                 },
@@ -280,7 +307,7 @@ class Animation {
         }
     }
 
-    // 섹션 1 : 인사말
+    // 섹션 2 : 인사말
     static section02 = {
         init: () => {
 
@@ -288,7 +315,7 @@ class Animation {
 
         default: () => {
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n1",
@@ -310,7 +337,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n2",
@@ -332,7 +359,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n3",
@@ -354,7 +381,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n4",
@@ -372,7 +399,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n5",
@@ -390,7 +417,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n6",
@@ -408,7 +435,7 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
                 ".n7",
@@ -430,10 +457,10 @@ class Animation {
             });
         
             ScrollTrigger.create({
-                trigger: ".section2_cont",
+                trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
-                ".section2_profile_cont",
+                "#profile .image",
                 {
                     scale: (1.3, 1.3),
                     transformOrigin: "500px 18px",

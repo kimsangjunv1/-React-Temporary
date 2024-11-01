@@ -154,39 +154,17 @@ button {
   border: 0;
 }
 
-/* 이미지 대체(ir) */
-.ir {
-  display: block;
-  overflow: hidden;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -9999px;
+html,
+body {
+	max-width: 100%;
+	// overflow-x: hidden;
+	position: relative;
 }
-
-/* 블라인드 효과 */
-.blind {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-}
-
-/* 스킵 메뉴 */
-#skip {
-  position: relative;
-  z-index: 100000;
-}
-#skip a {
-  background: #000;
-  color: #fff;
-  position: absolute;
-  padding: 20px 40px;
-  left: -400px;
-  top: 5px;
-}
-#skip a:active,
-#skip a:focus {
-  left: 5px;
+body {
+	background-color: #161c29;
+	overflow: hidden;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }

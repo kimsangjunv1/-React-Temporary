@@ -1,4 +1,74 @@
-/*prevent many large-by-comparison ripples by shrinking the height*/
+main {
+  > section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    &#intro {
+      overflow: hidden;
+    }
+
+    &#profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img {
+        position: absolute;
+        bottom: 15vw;
+        right: -300px;
+        width: 11vw;
+      }
+
+      > div {
+        display: flex;
+        width: 75vw;
+        height: 100%;
+        margin: 0 auto;
+
+        > section {
+          // 설명
+          &:nth-of-type(1) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            color: #fff;
+          }
+
+          // 프로필 이미지
+          &:nth-of-type(2) {
+            position: relative;
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 40%;
+              left: 50%;
+              width: 27vw;
+              height: 27vw;
+              border-radius: 100%;
+              background: linear-gradient(125deg, #ffffff, #ffffff00 80%);
+              transform: translate(-50%, -45%);
+              z-index: -1;
+            }
+
+            .section2_profile {
+              width: 30vw;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .section1 {
   display: flex;
   flex-direction: column;
@@ -93,16 +163,6 @@
     }
   }
 }
-.splitText {
-  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 25%, #fff 60%);
-  color: rgba(0, 0, 0, 0);
-  -webkit-background-clip: text;
-  font-size: 13vw;
-  font-weight: 100;
-  z-index: 1;
-  line-height: 80%;
-  height: 0;
-}
 .section1_desc {
   position: absolute;
   width: 100%;
@@ -149,16 +209,6 @@
     z-index: 10;
   }
 }
-.close {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  width: 71px;
-}
-.lama_ctrl {
-  overflow: hidden;
-}
 
 .vr1,
 .vr2,
@@ -170,12 +220,6 @@
 .vr8 {
   overflow: hidden;
 }
-
-.flex_ctrl {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .section2_desc {
   width: 50%;
   display: flex;
@@ -184,43 +228,7 @@
   position: relative;
   color: #fff;
 }
-.section2_profile {
-  width: 30vw;
-  z-index: 2;
-}
-.section2_profile_cont {
-  position: relative;
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 27vw;
-    height: 27vw;
-    border-radius: 100%;
-    background: linear-gradient(125deg, #ffffff, #ffffff00 80%);
-    transform: translate(-50%, -45%);
-    z-index: -1;
-  }
-}
-.section2_cont {
-  display: flex;
-  width: 75vw;
-  height: 100%;
-  margin: 0 auto;
-}
-.section {
-  .lama {
-    position: absolute;
-    bottom: 15vw;
-    right: -300px;
-    width: 11vw;
-  }
-}
+
 .first_name {
   font-size: 13.1vw;
   font-weight: 900;

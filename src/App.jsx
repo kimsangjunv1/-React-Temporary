@@ -34,7 +34,8 @@ const App = () => {
     const [ isVisible, setIsVisible ] = useState(false);
     
     useEffect(() => {
-        !isMobile && Animation.layout.main();
+        // !isMobile && Animation.layout.main();
+        Animation.layout.main()
         isVisible && setIsVisible(!isVisible);
     }, [isMobile])
 
@@ -48,12 +49,12 @@ const App = () => {
     }, [isLoaded])
 	return (
 		<Router>
-            <Header isMobile={isMobile} isVisible={isVisible} func={() => {setIsVisible(!isVisible)}}/>
+            <SkipComponents />
+            <Header isLoaded={isLoaded} isMobile={isMobile} isVisible={isVisible} func={() => {setIsVisible(!isVisible)}}/>
 			<Main>
 				<AnimatePresence>{ !isVisible ? "" : <NavigationComponents count={loadingCount} func={() => {setIsVisible(!isVisible)}}/> }</AnimatePresence>
                 <AnimatePresence>{ isLoaded ? "" : <LoadingComponents count={loadingCount} /> }</AnimatePresence>
                 <Routes><Route path="/" element={ <Home isMobile={isMobile} isLoaded={isLoaded} data={data} /> } /></Routes>
-                <SkipComponents />
                 <AwardsComponents />
                 {/* <ProgressComponents /> */}
                 {/* <NavigateComponents /> */}

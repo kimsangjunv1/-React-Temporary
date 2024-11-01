@@ -7,9 +7,9 @@ const Section02 = () => {
     }, [])
 return (
     // 섹션 2 : 김상준 소개
-    <section id="profile" className="section flex_ctrl">
-        <div className="section2_cont">
-            <div className="section2_desc">
+    <section id="profile">
+        <div>
+            <section>
                 <h2 className="fifth_name n1">SANGJUN</h2>
                 <h2 className="fifth_name n2">SANGJUN</h2>
                 <h2 className="fifth_name n3">SANGJUN</h2>
@@ -19,10 +19,10 @@ return (
                 </p>
                 <h2 className="second_name n6">SANGJUN</h2>
                 <h2 className="fifth_name n7">SANGJUN</h2>
-            </div>
-            <div className="section2_profile_cont">
-                <img src="/images/section/02/profile.webp" alt="김상준" className="section2_profile ir" />
-            </div>
+            </section>
+            <section className="image">
+                <img src="/images/section/02/profile.webp" alt="김상준" className="ir" />
+            </section>
         </div>
         <img src="/images/section/02/lama.webp" alt="라마" className="lama" />
     </section>
