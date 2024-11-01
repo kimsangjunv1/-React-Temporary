@@ -1,14 +1,6 @@
 import React, { useEffect } from "react";
 import Animation from "@/components/utils/animation";
 
-import section3_img_bottom from "./../../assets/img/section3_img_bottom.svg";
-import section3_img_001 from "./../../assets/img/section3_img_001.jpg";
-import section3_img_002 from "./../../assets/img/section3_img_002.jpg";
-import section3_img_003 from "./../../assets/img/section3_img_003.jpg";
-import section3_img_004 from "./../../assets/img/section3_img_004.jpg";
-import section3_img_005 from "./../../assets/img/section3_img_005.jpg";
-import section3_img_006 from "./../../assets/img/section3_img_006.jpg";
-
 const Section03 = ({ isLoaded }) => {
     useEffect(() => {
         Animation.section03.default();
@@ -24,17 +16,17 @@ const Section03 = ({ isLoaded }) => {
 
         <section className="panel custom_02">
             <img
-            className="section3_item_bottom2"
-            src={section3_img_bottom}
-            alt="라마인형들"
+                className="section3_item_bottom2"
+                src="/images/section/03/img-deco-bottom.webp"
+                alt="라마인형들"
             />
             <img
-            className="section3_item_bottom"
-            src={section3_img_bottom}
-            alt="라마인형들_뒷배경"
+                className="section3_item_bottom"
+                src="/images/section/03/img-deco-bottom.webp"
+                alt="라마인형들_뒷배경"
             />
             <div className="section3_item i001">
-            <img src={section3_img_001} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-01.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 SEARCH
@@ -59,7 +51,7 @@ const Section03 = ({ isLoaded }) => {
             </div>
 
             <div className="section3_item i002">
-            <img src={section3_img_002} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-02.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 QUIZ
@@ -83,7 +75,7 @@ const Section03 = ({ isLoaded }) => {
             </div>
 
             <div className="section3_item i003">
-            <img src={section3_img_003} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-03.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 SLIDE <br />
@@ -106,7 +98,7 @@ const Section03 = ({ isLoaded }) => {
             </div>
 
             <div className="section3_item i004">
-            <img src={section3_img_004} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-04.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 MOUSE <br />
@@ -129,7 +121,7 @@ const Section03 = ({ isLoaded }) => {
             </div>
 
             <div className="section3_item i005">
-            <img src={section3_img_005} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-05.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 PARALLAX <br />
@@ -152,7 +144,7 @@ const Section03 = ({ isLoaded }) => {
             </div>
 
             <div style={{ display: "none" }} className="section3_item i006">
-            <img src={section3_img_006} alt="Search Effect" />
+            <img src="/images/section/03/img-screenshot-06.webp" alt="Search Effect" />
             <div className="item_desc">
                 <h2>
                 JS <br />
