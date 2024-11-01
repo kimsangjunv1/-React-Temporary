@@ -27,10 +27,10 @@ const Section_03_5 = () => {
         </g>
       </svg>
 
-      <link
+      {/* <link
         href="https://fonts.googleapis.com/css?family=Lato:100"
         rel="stylesheet"
-      />
+      /> */}
     </section>
   );
 };

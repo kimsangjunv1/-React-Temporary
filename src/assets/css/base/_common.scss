@@ -163,27 +163,7 @@
 	-webkit-clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
 	clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
 }
-.porfolio_desc_fixed {
-	position: fixed;
-	right: 0;
-	top: 0;
-	height: 100%;
-	width: 0%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	flex-direction: column;
-	z-index: 111;
-	font-family: Red Hat Display;
-	padding: 7.2vw 0;
-	font-weight: 900;
-	font-size: 0.7vw;
-	text-transform: uppercase;
-	p {
-		transform: rotate(90deg);
-		background: transparent !important;
-	}
-}
+
 .point {
 	position: relative !important;
 	height: 300vw !important;
@@ -271,14 +251,13 @@
 
 // 섹션 별 경계
 .divider {
-	background: #fff;
 	height: 20vh !important;
+	min-height: auto;
 
 	&.type- {
 		&01 {
 			position: relative;
 			background: #fff;
-			height: 20vh !important;
 		}
 	}
 }

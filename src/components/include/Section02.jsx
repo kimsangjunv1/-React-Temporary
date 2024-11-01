@@ -14,7 +14,7 @@ return (
                 <h2 className="fifth_name n2">SANGJUN</h2>
                 <h2 className="fifth_name n3">SANGJUN</h2>
                 <h2 className="first_name n4">KIM</h2>
-                <p className="porfolio_desc n5">
+                <p className="n5">
                     새싹을 틔울 수 있는 씨앗이 되겠습니다.
                 </p>
                 <h2 className="second_name n6">SANGJUN</h2>

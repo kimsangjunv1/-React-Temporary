@@ -9,7 +9,7 @@ const Section04 = () => {
   }, [])
   return (
     // <!-- 섹션 4 : 게임 이펙트 -->
-    <section id="game" className="section point custom_color">
+    <section id="game" className="point custom_color">
       <div className="section4_fixed">
         <h2 className="title">
           GAME <em>EFFECT</em>

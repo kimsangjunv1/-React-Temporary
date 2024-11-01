@@ -1,5 +1,5 @@
 // 라이브러리
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -47,6 +47,7 @@ const App = () => {
             section();          // 핵심
         }
     }, [isLoaded])
+
 	return (
 		<Router>
             <SkipComponents />

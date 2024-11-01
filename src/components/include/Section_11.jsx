@@ -8,7 +8,7 @@ import section11_screenshot_01 from "./../../assets/img/section11_screenshot_01.
 const Section_11 = () => {
   return (
     // <!-- REACT API WEB : section11-->
-    <section style={{ background: "#31826ed3" }} className="section vr3 t_vr">
+    <section style={{ background: "#31826ed3" }} className="vr3 t_vr">
       <div className="section11_all_cont">
         <img className="section11_lama" src={section11_lama} alt="" />
         <div className="section11_desc_cont">

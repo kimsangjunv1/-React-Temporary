@@ -8,7 +8,7 @@ import section13_screenshot_01 from "./../../assets/img/section13_screenshot_01.
 const Section_13 = () => {
   return (
     // <!-- VUE API MOVIE : section13-->
-    <section style={{ background: "#3ec4d0cd" }} className="section vr5 t_vr">
+    <section style={{ background: "#3ec4d0cd" }} className="vr5 t_vr">
       <div className="section13_all_cont">
         <img className="section13_lama" src={section13_lama} alt="" />
         <div className="section13_desc_cont">

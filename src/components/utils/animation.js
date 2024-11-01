@@ -46,19 +46,19 @@ class Animation {
                 end: () => "+=" + 16500,
                 onEnter: () => {
                     gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeave: () => {
                     gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 },
                 onEnterBack: () => {
                     gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeaveBack: () => {
                     gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 }
             });
 
@@ -72,22 +72,22 @@ class Animation {
                 onEnter: () => {
                     console.log("amount들어옴");
                     gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeave: () => {
                     console.log("amount나감")
                     gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 },
                 onEnterBack: () => {
                     console.log("amount다시들옴")
                     gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeaveBack: () => {
                     console.log("amount다시나감")
                     gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
-                    gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
+                    // gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 }
             });
         },
@@ -285,16 +285,6 @@ class Animation {
                 trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
-                    ".section1_desc h2",
-                    { translateY: "-30%" },
-                    { translateY: "100%", filter: "blur(20px)" }
-                ),
-            });
-        
-            ScrollTrigger.create({
-                trigger: "#profile",
-                scrub: 1,
-                animation: gsap.fromTo(
                 "#profile .lama",
                 {
                     right: "-300px",
@@ -476,7 +466,7 @@ class Animation {
         }
     }
 
-    // 섹션 1 : 인사말
+    // 섹션 3 : 자바스크립트
     static section03 = {
         init: () => {
             // 가로 스크롤
@@ -486,11 +476,10 @@ class Animation {
                 xPercent: -100 * (sections.length - 1),
                 ease: "none",
                 scrollTrigger: {
-                trigger: ".horizontal",
-                // markers: true,
-                pin: true,
-                scrub: true,
-                end: "+=5000",
+                    trigger: ".horizontal",
+                    pin: true,
+                    scrub: true,
+                    end: "+=5000",
                 },
             });
         },

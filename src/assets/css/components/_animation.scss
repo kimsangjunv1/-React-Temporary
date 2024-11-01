@@ -139,16 +139,6 @@
 	  transform: translate(85px, 0%);
 	}
   }
-  @media (max-width: 50em) {
-	.content {
-	  h1 {
-		font-size: 12vmax;
-	  }
-	}
-	.editorial {
-	  height: 17vw;
-	}
-  }
   
   @-webkit-keyframes updown1 {
 	0% {

@@ -5,7 +5,7 @@ import section5p5_screenshot_03 from "./../../assets/img/section5p5_screenshot_0
 
 const Section_06 = () => {
     return (
-        <section id="site" className="section custom_color_dark point2">
+        <section id="site" className="custom_color_dark point2">
         {/* 컨텐츠 */}
         <section>
             <div className="section6p5_static">

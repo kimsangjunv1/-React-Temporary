@@ -15,7 +15,7 @@ const Section_07 = ({isLoaded}) => {
 
   return (
     // <!-- 섹션 7 : 모든 프로젝트 -->
-    <section id="project" className="section bg_change_purple point3">
+    <section id="project" className="bg_change_purple point3">
       <div>
         <div className="section6p7_static">
           <p className="section6p7_title">
