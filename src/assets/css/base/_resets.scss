@@ -1,18 +1,18 @@
 // 변수 설정
 :root {
-  --white: #fff;
-  --black: #000;
+  // 초기 설정
+  font-family: var(--custom-font), -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-size: 62.5%;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
 
-  --bg-light: #f0eeeb;
-  --bg-light-border: #dad8d1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  --bg-dark: #000;
-  --bg-dark-border: #1a1a1a;
-
-  --font-size: 16px;
-  --font-height: 1.4;
-  --font-color: #fff;
-  --font-main: "RedHatDisplay";
+  background: var(--page-home-bg);
+  color: var(--main-text-color);
 }
 
 // border-box 초기화

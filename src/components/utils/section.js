@@ -8,6 +8,25 @@ const section = () => {
     const matchMedia = gsap.matchMedia();
 
     ScrollTrigger.create({
+        trigger: ".section4_fixed",
+        scrub: 1,
+        animation: gsap.fromTo(
+        ".section4_fixed",
+        {
+            scale: (1.3, 1.3),
+            opacity: 0,
+            transformOrigin: "900px 18px",
+        },
+        {
+            scale: 1,
+            opacity: 1,
+            transformOrigin: "50% 0%",
+            translate3d: "0,-25px,0",
+        }
+        ),
+    });
+
+    ScrollTrigger.create({
         trigger: ".section5_fixed",
         scrub: 1,
         animation: gsap.fromTo(

@@ -7,7 +7,7 @@ const Section02 = () => {
     }, [])
 return (
     // 섹션 2 : 김상준 소개
-    <section className="section flex_ctrl">
+    <section id="profile" className="section flex_ctrl">
         <div className="section2_cont">
             <div className="section2_desc">
                 <h2 className="fifth_name n1">SANGJUN</h2>

@@ -25,17 +25,9 @@ const Section_07 = ({isLoaded}) => {
         <div className="light ir">light</div>
         <div className="site_type">
           <div className="screenshot_cont">
-            <img
-              className="screenshot s6p5_1"
-              src={section7_screenshot_01_test}
-              alt=""
-            />
+            <img className="screenshot s6p5_1" src={section7_screenshot_01_test} alt="" />
+            <img className="screenshot s6p5_2" src={section6p5_screenshot_02} alt="" />
           </div>
-          <img
-            className="screenshot s6p5_2"
-            src={section6p5_screenshot_02}
-            alt=""
-          />
           <div className="site_type_04_desc">
             <h2>TECHTUBE</h2>
             <div className="project_type">
