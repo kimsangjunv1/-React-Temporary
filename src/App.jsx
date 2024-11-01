@@ -57,7 +57,6 @@ const App = () => {
                 <AwardsComponents />
                 {/* <ProgressComponents /> */}
                 {/* <NavigateComponents /> */}
-				{/* <DescFixed /> */}
 			</Main>
 			{/* <Footer /> */}
 		</Router>

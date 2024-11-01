@@ -1,47 +1,53 @@
-// 라인시드
+// LINESeedKR 폰트
 @font-face {
   font-family: "LINESeedKR";
   font-weight: 100;
-  font-style: lighter;
-  src: url("/fonts/LINESeedKR-Th.eot");
-  src: url("/fonts/LINESeedKR-Th.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/LINESeedKR-Th.woff2") format("woff2"),
-    url("/fonts/LINESeedKR-Th.woff") format("woff"),
-    url("/fonts/LINESeedKR-Th.ttf") format("truetype");
+  font-style: normal;
+  src: local("LINESeedKR-Th"), 
+       url("/fonts/LINESeedKR-Th.eot");
+  src: local("LINESeedKR-Th"),
+       url("/fonts/LINESeedKR-Th.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/LINESeedKR-Th.woff2") format("woff2"),
+       url("/fonts/LINESeedKR-Th.woff") format("woff"),
+       url("/fonts/LINESeedKR-Th.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
   font-family: "LINESeedKR";
   font-weight: 300;
   font-style: normal;
-  src: url("/fonts/LINESeedKR-Rg.eot");
-  src: url("/fonts/LINESeedKR-Rg.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/LINESeedKR-Rg.woff2") format("woff2"),
-    url("/fonts/LINESeedKR-Rg.woff") format("woff"),
-    url("/fonts/LINESeedKR-Rg.ttf") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "LINESeedKR";
-  font-weight: 600;
-  font-style: bold;
-  src: url("/fonts/LINESeedKR-Bd.eot");
-  src: url("/fonts/LINESeedKR-Bd.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/LINESeedKR-Bd.woff2") format("woff2"),
-    url("/fonts/LINESeedKR-Bd.woff") format("woff"),
-    url("/fonts/LINESeedKR-Bd.ttf") format("truetype");
+  src: local("LINESeedKR-Rg"),
+       url("/fonts/LINESeedKR-Rg.eot");
+  src: local("LINESeedKR-Rg"),
+       url("/fonts/LINESeedKR-Rg.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/LINESeedKR-Rg.woff2") format("woff2"),
+       url("/fonts/LINESeedKR-Rg.woff") format("woff"),
+       url("/fonts/LINESeedKR-Rg.ttf") format("truetype");
   font-display: swap;
 }
 
-// 레드 햇 디스플레이
+@font-face {
+  font-family: "LINESeedKR";
+  font-weight: 600;
+  font-style: normal;
+  src: local("LINESeedKR-Bd"),
+       url("/fonts/LINESeedKR-Bd.eot");
+  src: local("LINESeedKR-Bd"),
+       url("/fonts/LINESeedKR-Bd.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/LINESeedKR-Bd.woff2") format("woff2"),
+       url("/fonts/LINESeedKR-Bd.woff") format("woff"),
+       url("/fonts/LINESeedKR-Bd.ttf") format("truetype");
+  font-display: swap;
+}
+
+// Red Hat Display 폰트
 @font-face {
   font-family: "RedHatDisplay";
   font-weight: 300;
-  font-style: lighter;
-  src: url("/fonts/RedHatDisplay-Light.ttf") format("truetype");
+  font-style: normal;
+  src: local("RedHatDisplay-Light"),
+       url("/fonts/RedHatDisplay-Light.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -49,7 +55,8 @@
   font-family: "RedHatDisplay";
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/RedHatDisplay-Medium.ttf") format("truetype");
+  src: local("RedHatDisplay-Medium"),
+       url("/fonts/RedHatDisplay-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -57,7 +64,8 @@
   font-family: "RedHatDisplay";
   font-weight: 500;
   font-style: normal;
-  src: url("/fonts/RedHatDisplay-Regular.ttf") format("truetype");
+  src: local("RedHatDisplay-Regular"),
+       url("/fonts/RedHatDisplay-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -65,7 +73,8 @@
   font-family: "RedHatDisplay";
   font-weight: 600;
   font-style: bold;
-  src: url("/fonts/RedHatDisplay-SemiBold.ttf") format("truetype");
+  src: local("RedHatDisplay-SemiBold"),
+       url("/fonts/RedHatDisplay-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -73,7 +82,8 @@
   font-family: "RedHatDisplay";
   font-weight: 700;
   font-style: bold;
-  src: url("/fonts/RedHatDisplay-Bold.ttf") format("truetype");
+  src: local("RedHatDisplay-Bold"),
+       url("/fonts/RedHatDisplay-Bold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -81,7 +91,8 @@
   font-family: "RedHatDisplay";
   font-weight: 800;
   font-style: bold;
-  src: url("/fonts/RedHatDisplay-ExtraBold.ttf") format("truetype");
+  src: local("RedHatDisplay-ExtraBold"),
+       url("/fonts/RedHatDisplay-ExtraBold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -89,180 +100,22 @@
   font-family: "RedHatDisplay";
   font-weight: 900;
   font-style: bolder;
-  src: url("/fonts/RedHatDisplay-Black.ttf") format("truetype");
+  src: local("RedHatDisplay-Black"),
+       url("/fonts/RedHatDisplay-Black.ttf") format("truetype");
   font-display: swap;
 }
 
-// 넥슨 고딕 레벨 1
-@font-face {
-  font-family: "NexonLv1GothicLow";
-  font-weight: 300;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowLight.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowLight.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowLight.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowLight.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NexonLv1GothicLow";
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowRegular.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowRegular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowRegular.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowRegular.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowRegular.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NexonLv1GothicLow";
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowBold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowBold.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowBold.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1GothicLow/NexonLv1GothicLowBold.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-// 넥슨 고딕 레벨 2
-@font-face {
-  font-family: "NexonLv2Gothic";
-  font-weight: 300;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicLight.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NexonLv2Gothic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicRegular.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NexonLv2Gothic";
-  font-weight: 500;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicMedium.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NexonLv2Gothic";
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/NexonLv2Gothic/NexonLv2GothicBold.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-// bebas Neue
+// Bebas Neue 폰트
 @font-face {
   font-family: "BebasNeue";
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/BebasNeue-Regular.eot");
-  src: url("/fonts/BebasNeue-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/BebasNeue-Regular.woff2") format("woff2"),
-    url("/fonts/BebasNeue-Regular.woff") format("woff"),
-    url("/fonts/BebasNeue-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GmarketSans";
-  font-weight: 300;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf")
-      format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "GmarketSans";
-  font-weight: 500;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
-      format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "GmarketSans";
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf")
-      format("truetype");
+  src: local("BebasNeue-Regular"),
+       url("/fonts/BebasNeue-Regular.eot");
+  src: local("BebasNeue-Regular"),
+       url("/fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/BebasNeue-Regular.woff2") format("woff2"),
+       url("/fonts/BebasNeue-Regular.woff") format("woff"),
+       url("/fonts/BebasNeue-Regular.ttf") format("truetype");
   font-display: swap;
 }

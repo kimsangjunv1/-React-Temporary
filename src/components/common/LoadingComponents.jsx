@@ -42,8 +42,11 @@ const LoadingComponents = ({ count }) => {
                 className="info"
                 exit={{ opacity: 0 }}
             >
-                <h2>로딩중...</h2>
-                <p>{count}</p>
+                <img className="lama_loading" src="/images/common/img-loading.webp" alt="라마" />
+                <div>
+                    <h2>로딩중...</h2>
+                    <p>{count}</p>
+                </div>
             </motion.div>
         </motion.article>
     );
