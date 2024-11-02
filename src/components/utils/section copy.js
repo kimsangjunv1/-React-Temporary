@@ -738,10 +738,10 @@ const section = () => {
 
         ScrollTrigger.create({
         scrub: 1,
-        animation: gsap.from(".ball_cont", {
+        animation: gsap.from(".container-ball", {
             y: -7500,
         }),
-        animation: gsap.to(".ball_cont", {
+        animation: gsap.to(".container-ball", {
             y: 800,
         }),
         });

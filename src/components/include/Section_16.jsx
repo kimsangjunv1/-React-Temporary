@@ -8,7 +8,7 @@ import section16_lama from "./../../assets/img/section16_lama.svg";
 const Section_16 = () => {
   return (
     // <!-- section16 -->
-    <section style={{ background: "#f6f6fb" }} className="vr8">
+    <section id="end">
       <div className="section16_item_cont">
         <div className="contact_cont">
           <h2>CONTACT_ME</h2>

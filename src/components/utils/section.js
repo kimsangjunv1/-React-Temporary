@@ -5,7 +5,6 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 const section = () => {
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
-    const matchMedia = gsap.matchMedia();
 
     ScrollTrigger.create({
         trigger: ".section4_fixed",
@@ -47,9 +46,9 @@ const section = () => {
         ),
     });
 
-    matchMedia.add("(min-width: 700px)", () => {
+    gsap.matchMedia().add("(min-width: 700px)", () => {
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -66,7 +65,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -83,7 +82,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -100,7 +99,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -117,7 +116,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -134,7 +133,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -151,7 +150,7 @@ const section = () => {
         });
 
         ScrollTrigger.create({
-            trigger: ".custom_color_dark",
+            trigger: "#site",
             scrub: 1,
 
             animation: gsap.fromTo(
@@ -351,10 +350,10 @@ const section = () => {
 
         ScrollTrigger.create({
             scrub: 1,
-            animation: gsap.from(".ball_cont", {
+            animation: gsap.from(".container-ball", {
                 y: -7500,
             }),
-            animation: gsap.to(".ball_cont", {
+            animation: gsap.to(".container-ball", {
                 y: 800,
             }),
         });
@@ -421,6 +420,7 @@ const section = () => {
         }
         ),
     });
+
     ScrollTrigger.create({
         scrub: 0.1,
         animation: gsap.fromTo(
@@ -437,6 +437,7 @@ const section = () => {
         }
         ),
     });
+
     ScrollTrigger.create({
         scrub: 0.1,
         animation: gsap.fromTo(
@@ -451,6 +452,7 @@ const section = () => {
         }
         ),
     });
+
     ScrollTrigger.create({
         scrub: 0.1,
         animation: gsap.fromTo(
@@ -467,6 +469,7 @@ const section = () => {
         }
         ),
     });
+
     ScrollTrigger.create({
         scrub: 0.1,
         animation: gsap.fromTo(
@@ -502,7 +505,7 @@ const section = () => {
         ),
     });
     ScrollTrigger.create({
-        trigger: ".t_vr",
+        trigger: ".vr1",
         scrub: 1,
         animation: gsap.fromTo(
         ".sec8_bg",
@@ -691,51 +694,47 @@ const section = () => {
         ),
     });
 
-    var animation;
-
-    let mm = gsap.matchMedia();
-
-    mm.add("(min-width: 700px)", () => {
+    gsap.matchMedia().add("(min-width: 700px)", () => {
         gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
         gsap.set("#tractor", { transformOrigin: "50% 50%" });
 
-        animation = gsap.to("#motionSVG", {
-        scrollTrigger: {
-            trigger: "#motionPath",
-            start: "top 80%",
-            scrub: 3,
-        },
-        duration: 10,
-        ease: "none",
-        immediateRender: true,
-        motionPath: {
-            path: "#motionPath",
-            align: "#motionPath",
-            alignOrigin: [0.5, 0.5],
-            autoRotate: 210,
-        },
+        gsap.to("#motionSVG", {
+            scrollTrigger: {
+                trigger: "#motionPath",
+                start: "top 80%",
+                scrub: 3,
+            },
+            duration: 10,
+            ease: "none",
+            immediateRender: true,
+            motionPath: {
+                path: "#motionPath",
+                align: "#motionPath",
+                alignOrigin: [0.5, 0.5],
+                autoRotate: 210,
+            },
         });
 
         ScrollTrigger.create({
-        trigger: ".pin2",
+        trigger: ".divider.type-03",
         scrub: 1,
 
         animation: gsap.fromTo(
             ".lama_fur2",
             {
-            transform: "rotate(0deg)",
-            yPercent: "100",
+                transform: "rotate(-70deg)",
+                yPercent: "100",
             },
             {
-            transform: "rotate(70deg)",
-            yPercent: "0",
+                transform: "rotate(70deg)",
+                yPercent: "0",
             }
         ),
         });
     });
 
     ScrollTrigger.create({
-        trigger: ".vr8",
+        trigger: "#end",
         scrub: 1,
 
         animation: gsap.fromTo(
@@ -749,50 +748,43 @@ const section = () => {
         ),
     });
 
-    var animation2;
-
-    let mm3 = gsap.matchMedia();
-    mm3.add("(min-width: 700px)", () => {
+    gsap.matchMedia().add("(min-width: 700px)", () => {
         gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
         gsap.set("#fur", { transformOrigin: "50% 50%" });
 
-        animation2 = gsap.to("#motionSVG2", {
-        scrollTrigger: {
-            trigger: "#motionPath2",
-            start: "top 130%",
-            scrub: 1,
-        },
-        duration: 10,
-        ease: "none",
-        immediateRender: true,
-        motionPath: {
-            path: "#motionPath2",
-            align: "#motionPath2",
-            alignOrigin: [0.5, 0.5],
-        },
+        gsap.to("#motionSVG2", {
+            scrollTrigger: {
+                trigger: "#motionPath2",
+                start: "top 130%",
+                scrub: 1,
+            },
+            duration: 10,
+            ease: "none",
+            immediateRender: true,
+            motionPath: {
+                path: "#motionPath2",
+                align: "#motionPath2",
+                alignOrigin: [0.5, 0.5],
+            },
         });
 
         ScrollTrigger.create({
-        trigger: "#motionPath2",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            "#motionSVG2",
-            {
-            rotate: "+=3000",
-            },
-            {
-            rotate: "+=3000",
-            }
-        ),
+            trigger: "#motionPath2",
+            scrub: 1,
+            animation: gsap.fromTo(
+                "#motionSVG2",
+                {
+                rotate: "+=3000",
+                },
+                {
+                rotate: "+=3000",
+                }
+            ),
         });
     });
 
-    const slides = document.querySelectorAll(".t_vr");
-
-    function initParallax() {
-        slides.forEach((slide, i) => {
-        let imageWrappers = slide.querySelectorAll(".t_vr > div");
+    document.querySelectorAll("#mini > section").forEach((slide, i) => {
+        let imageWrappers = slide.querySelectorAll("section > div");
 
         gsap.fromTo(
             imageWrappers,
@@ -800,17 +792,15 @@ const section = () => {
                 y: "-30vh",
             },
             {
-            y: "30vh",
-            scrollTrigger: {
-                trigger: slide,
-                scrub: true,
-            },
-            ease: "none",
+                y: "30vh",
+                scrollTrigger: {
+                    trigger: slide,
+                    scrub: true,
+                },
+                ease: "none",
             }
         );
-        });
-    }
-    initParallax();
+    });
 };
 
 export default section;

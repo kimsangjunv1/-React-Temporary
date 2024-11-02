@@ -9,11 +9,12 @@ const Section_09 = () => {
   return (
     // <!-- REACT API TMDB : section9 -->
     <section
-      className="vr1 t_vr"
+      className="vr1"
       style={{ background: "#00244dd4" }}
     >
-      <div className="section9_all_cont">
+      <div>
         <img className="section9_lama" src={section9_lama} alt="" />
+
         <div className="section9_desc_cont">
           <div className="title_wrap">
             <p className="title">
@@ -38,11 +39,14 @@ const Section_09 = () => {
             <a href="https://reactapi11.netlify.app/movie">VIEW</a>
           </div>
         </div>
+
         <div className="section9_logo_cont">
           <img className="sec8_logo" src={section9_logo} alt="" />
           <img className="sec8_bg polygon" src={section9_logo_bg} alt="" />
         </div>
-        <div style={{ background: "#161c29e0" }} className="color_bg"></div>
+
+        <div style={{ background: "#161c29e0" }} className="background"></div>
+
         <img
           className="section9_main_screenshot"
           src={section9_screenshot_01}

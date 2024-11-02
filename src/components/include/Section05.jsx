@@ -15,7 +15,7 @@ const Section05 = () => {
   // }, [])
   return (
     // <!-- 섹션 5 : DOCS -->
-    <section id="reference" className="horizontal2 custom_color pin4">
+    <section id="reference" className="pin4">
       <div className="section5_fixed">
         <h2>
           REFERENCE <em>BOOK</em>
@@ -23,7 +23,7 @@ const Section05 = () => {
       </div>
       <img className="lama_fur_test" src={section5_lama_fly} alt="" />
       <img className="lama_fur_top" src={section5_lama_top} alt="" />
-      <section style={{ opacity: "0" }} className="panel2 custom_flex">
+      <section style={{ opacity: "0" }}>
         <div className="section5_item s5_1">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_01} alt="#" />
@@ -42,7 +42,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section className="panel2 custom_flex start">
+      
+      <section>
         <div className="section5_item s5_2">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_01} alt="#" />
@@ -63,7 +64,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section className="panel2 custom_flex">
+
+      <section>
         <div className="section5_item s5_3">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_02} alt="#" />
@@ -84,7 +86,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section className="panel2 custom_flex">
+
+      <section>
         <div className="section5_item s5_4">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_03} alt="#" />
@@ -105,7 +108,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section className="panel2 custom_flex">
+
+      <section>
         <div className="section5_item s5_5">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_04} alt="#" />
@@ -128,7 +132,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section className="panel2 custom_flex">
+
+      <section>
         <div className="section5_item s5_6">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_05} alt="#" />
@@ -149,7 +154,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section style={{ display: "none" }} className="panel2 custom_flex none">
+
+      <section style={{ display: "none" }}>
         <div className="section5_item">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_01} alt="#" />
@@ -168,7 +174,8 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <section style={{ opacity: "0" }} className="panel2 custom_flex end">
+
+      <section style={{ opacity: "0" }}>
         <div className="section5_item">
           <div className="section5_screenshot_cont">
             <img src={section5_screenshot_01} alt="#" />

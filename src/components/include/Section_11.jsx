@@ -8,8 +8,8 @@ import section11_screenshot_01 from "./../../assets/img/section11_screenshot_01.
 const Section_11 = () => {
   return (
     // <!-- REACT API WEB : section11-->
-    <section style={{ background: "#31826ed3" }} className="vr3 t_vr">
-      <div className="section11_all_cont">
+    <section style={{ background: "#31826ed3" }} className="vr3">
+      <div>
         <img className="section11_lama" src={section11_lama} alt="" />
         <div className="section11_desc_cont">
           <div className="title_wrap">
@@ -38,7 +38,7 @@ const Section_11 = () => {
           <img className="sec11_logo" src={section11_logo} alt="" />
           <img className="sec11_bg polygon" src={section11_logo_bg} alt="" />
         </div>
-        <div style={{ background: "#161c29e0" }} className="color_bg"></div>
+        <div style={{ background: "#161c29e0" }} className="background"></div>
 
         <img
           className="section11_main_screenshot"

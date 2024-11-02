@@ -1,7 +1,7 @@
 const Section_15 = () => {
     return (
         // <!-- section15 -->
-        <section id="amount" style={{ background: "#f6f6fb" }} className="vr7">
+        <section id="amount">
             <section className="section15_main_title">
                 <h2>Worklist</h2>
             </section>

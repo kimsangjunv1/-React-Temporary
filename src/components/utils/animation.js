@@ -8,36 +8,6 @@ class Animation {
     // 기본 레이아웃
     static layout = {
         header: (target) => {
-            // Marquee 효과
-            // const sections = gsap.utils.toArray(".marquee .content");
-
-            // for(let i = 0; i <= sections.length - 1; i++ ) {
-            //     gsap.to(sections[i], {
-            //         xPercent: -100,
-            //         repeat: -1,
-            //         duration: 70,
-            //         ease: "linear",
-            //         modifiers: {
-            //             xPercent: gsap.utils.wrap(-100, 0)
-            //         }
-            //     });
-            // };
-
-            // 로고 반복 애니메이션
-            // gsap.fromTo("#header .logo a img",{
-            //     opacity: 0.8,
-            // },{
-            //     opacity: 1,
-            //     // rotate: 720,
-            //     repeat: -1,
-            //     duration: 0.5,
-            //     ease: "power1.inout",
-            //     yoyo: true,
-            // });
-
-            // 각 섹션별 DOM
-            // const conatinerJavascript = document.querySelector("#javascript");
-
             ScrollTrigger.create({
                 trigger: "#game",
                 scrub: 0,
@@ -299,9 +269,7 @@ class Animation {
 
     // 섹션 2 : 인사말
     static section02 = {
-        init: () => {
-
-        },
+        init: () => {},
 
         default: () => {
             ScrollTrigger.create({
@@ -476,7 +444,7 @@ class Animation {
                 xPercent: -100 * (sections.length - 1),
                 ease: "none",
                 scrollTrigger: {
-                    trigger: ".horizontal",
+                    trigger: "#javascript",
                     pin: true,
                     scrub: true,
                     end: "+=5000",
@@ -704,9 +672,7 @@ class Animation {
     }
 
     static section05 = {
-        init: () => {
-
-        },
+        init: () => {},
 
         default: () => {
             ScrollTrigger.create({
@@ -742,9 +708,7 @@ class Animation {
     }
 
     static section07 = {
-        init: () => {
-
-        },
+        init: () => {},
 
         default: () => {
             ScrollTrigger.create({
@@ -934,16 +898,17 @@ class Animation {
     
             ScrollTrigger.create({
                 scrub: 1,
-                animation: gsap.from(".ball_cont", {
+                animation: gsap.from(".container-ball", {
                     y: -7500,
                 }),
-                animation: gsap.to(".ball_cont", {
+                animation: gsap.to(".container-ball", {
                     y: 800,
                 }),
             });
         }
     }
 
+    // 가로 스크롤이 필요한 섹션
     static horizontal = {
         section03: () => {
             // JS 이펙트 설명
@@ -954,7 +919,7 @@ class Animation {
                 xPercent: -100 * (sections.length - 1),
                 ease: "none",
                 scrollTrigger: {
-                trigger: ".horizontal",
+                trigger: "#javascript",
                 // markers: true,
                 pin: true,
                 scrub: true,
@@ -966,13 +931,13 @@ class Animation {
         section05: () => {
             // 게임 이펙트
             // 개별 아이템 하나하나가 다 섹션
-            let sections2 = gsap.utils.toArray(".panel2");
+            let sections2 = gsap.utils.toArray("#reference > section");
             gsap.to(sections2, {
                 xPercent: -100 * (sections2.length - 1),
                 ease: "none",
                 // duration: 122.5,
                 scrollTrigger: {
-                trigger: ".horizontal2",
+                trigger: "#reference",
                 // markers: true,
                 pin: true,
                 scrub: 1,
@@ -980,38 +945,6 @@ class Animation {
                 },
             });
         }
-    }
-
-    // 가로 스크롤 전용
-    static sectionHorizontal(target) {
-        const sections = gsap.utils.toArray(".horizontal > section");
-        gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: target.container.current,
-                pin: true,
-                scrub: 0,
-                // snap: 1 / (sections.length - 1),
-                end: () => "+=" + target.container.current.offsetWidth,
-            },
-        });
-    }
-
-    // 가로 스크롤 전용
-    static sectionHorizontalTest(target) {
-        const sections = gsap.utils.toArray("#skill > section");
-
-        gsap.to(sections, {
-            x: `-${target.container.current.offsetWidth}`,
-            ease: "none",
-            scrollTrigger: {
-                trigger: target.container.current,
-                pin: true,
-                scrub: 0,
-                end: () => "+=" + target.container.current.offsetWidth,
-            },
-        });
     }
 }
 

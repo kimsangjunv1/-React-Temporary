@@ -35,12 +35,16 @@ const Home = ({ isMobile, isLoaded }) => {
 			<Section_06 />
 			<Section_06_5 />
 			<Section_07 isLoaded={isLoaded}/>
-			<Section_09 />
-			<Section_10 />
-			<Section_11 />
-			<Section_12 />
-			<Section_13 />
-			<Section_14 />
+
+			<section id="mini">
+				<Section_09 />
+				<Section_10 />
+				<Section_11 />
+				<Section_12 />
+				<Section_13 />
+				<Section_14 />
+			</section>
+
 			<Section_15 />
 			<Section_16 />
 		</Fragment>

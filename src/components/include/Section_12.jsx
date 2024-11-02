@@ -8,8 +8,8 @@ import section12_screenshot_01 from "./../../assets/img/section12_screenshot_01.
 const Section_12 = () => {
   return (
     // <!-- VUE API UNSPLASH : section12-->
-    <section style={{ background: "#31826ed3" }} className="vr4 t_vr">
-      <div className="section12_all_cont">
+    <section style={{ background: "#31826ed3" }} className="vr4">
+      <div>
         <img className="section12_lama" src={section12_lama} alt="" />
         <div className="section12_desc_cont">
           <div className="title_wrap">
@@ -43,7 +43,7 @@ const Section_12 = () => {
             alt=""
           />
         </div>
-        <div style={{ background: "#0d4430d4" }} className="color_bg"></div>
+        <div style={{ background: "#0d4430d4" }} className="background"></div>
 
         <img
           className="section12_main_screenshot"
