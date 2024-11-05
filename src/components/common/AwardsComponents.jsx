@@ -4,6 +4,7 @@ const AwardsComponents = () => {
     return (
         <section id="awwwards">
             <a href="https://www.awwwards.com/sites/with-alpaca-portfolio" target="_blank">
+                <p>어워드</p>
                 <svg width="53.08" height="171.358">
                     <path className="js-color-bg" fill="white" d="M0 0h53.08v171.358H0z"></path>
                     <g className="js-color-text" fill="black">

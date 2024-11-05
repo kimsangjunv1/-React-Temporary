@@ -9,7 +9,7 @@ const Section04 = () => {
   }, [])
   return (
     // <!-- 섹션 4 : 게임 이펙트 -->
-    <section id="game" className="point">
+    <section id="game">
       <div className="section4_fixed">
         <h2 className="title">
           GAME <em>EFFECT</em>
@@ -34,12 +34,6 @@ const Section04 = () => {
 
       <div className="section4_cont">
         <div className="section4_icon_layout one">
-          {/* <div className="level_cont">
-            <p>!</p>
-            <p>
-              공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
-            </p>
-          </div> */}
           <div className="section4_item">
             <div className="section4_left"></div>
             <div className="section4_right">
@@ -57,12 +51,6 @@ const Section04 = () => {
           </div>
         </div>
         <div className="section4_rev_icon_layout">
-          {/* <div className="level_cont">
-            <p>!</p>
-            <p>
-              공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
-            </p>
-          </div> */}
           <div className="section4_rev_item two">
             <div className="section4_rev_left">
               <h2>02.</h2>

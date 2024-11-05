@@ -3,6 +3,8 @@ import section5p5_screenshot_01 from "./../../assets/img/section5p5_screenshot_0
 import section5p5_screenshot_02 from "./../../assets/img/section5p5_screenshot_02.jpg";
 import section5p5_screenshot_03 from "./../../assets/img/section5p5_screenshot_03.jpg";
 
+import ReactPlayer from "react-player";
+
 const Section_06 = () => {
     return (
         <section id="site">
@@ -13,128 +15,143 @@ const Section_06 = () => {
                     PERSONAL <em>PROJECT</em>
                 </p>
                 </div>
+
                 <div className="light ir">light</div>
                 <img className="light_on_top" src={section5p5_light} alt="" />
+
                 <div>
-                <img
-                    className="screenshot s5p5_1"
-                    src={section5p5_screenshot_01}
-                    alt=""
-                />
-                <div className="site_type_01_desc">
-                    <h2>PICK</h2>
-                    <div className="project_type">
-                    <span>팀 프로젝트</span>
-                    <span>담당 : 디자인 100% / 프론트 60% / 퍼블리싱 80%</span>
-                    </div>
-                    <p>
-                    <strong>
-                        뮤직플레이어 Pick은 날씨에 따라
+                    <ReactPlayer
+                        className="screenshot s5p5_1"
+                        url="/videos/section/06/video-pickle.mp4"
+                        loop={true}
+                        playing={true} // 자동 재생 on
+                        muted={true} // 자동 재생 on
+                        controls={false} // 플레이어 컨트롤 노출 여부
+                        light={false} // 플레이어 모드
+                        config={{
+                            file: {
+                                attributes: {
+                                    playsInline: true, // 모바일 기기에서 비디오를 재생합니다.
+                                },
+                            },
+                        }}
+                    />
+                    <div className="site_type_01_desc">
+                        <h2>PICK</h2>
+                        <div className="project_type">
+                        <span>팀 프로젝트</span>
+                        <span>담당 : 디자인 100% / 프론트 60% / 퍼블리싱 80%</span>
+                        </div>
+                        <p>
+                        <strong>
+                            뮤직플레이어 Pick은 날씨에 따라
+                            <br />
+                            음악을 추천해주는 사이트 입니다
+                        </strong>
                         <br />
-                        음악을 추천해주는 사이트 입니다
-                    </strong>
-                    <br />
-                    <br />
-                    Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
-                    <br />
-                    넘겨주고 컴포넌트간의 가공된 데이터를 받을 수 있도록 Redux
-                    <br />
-                    Toolkit을 통해 관리하였습니다.
-                    <br />
-                    <br />
-                    메인화면 첫번째 섹션에 어떤 음악들이 추천되었는지 두번째 섹션에
-                    <br />
-                    주간 날씨가 어떤지 세번째 섹션에는 각 음악들의 순위와 아티스트들을
-                    <br />
-                    보여주도록 하였으며
-                    <br />
-                    <br />
-                    각 아티스트가 어떤 음악을 녹음했는지 발매 정보를 각
-                    <br />
-                    아티스트별로 클릭을 했을때 보여주고 해당 음원들을 눌렀을때
-                    <br />
-                    실제로 재생되도록 하였습니다.
-                    </p>
-                    <div className="section6p5_button_cont">
-                    <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
-                        CODE
-                    </a>
-                    <a href="https://react-pick.netlify.app">VIEW</a>
+                        <br />
+                        Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
+                        <br />
+                        넘겨주고 컴포넌트간의 가공된 데이터를 받을 수 있도록 Redux
+                        <br />
+                        Toolkit을 통해 관리하였습니다.
+                        <br />
+                        <br />
+                        메인화면 첫번째 섹션에 어떤 음악들이 추천되었는지 두번째 섹션에
+                        <br />
+                        주간 날씨가 어떤지 세번째 섹션에는 각 음악들의 순위와 아티스트들을
+                        <br />
+                        보여주도록 하였으며
+                        <br />
+                        <br />
+                        각 아티스트가 어떤 음악을 녹음했는지 발매 정보를 각
+                        <br />
+                        아티스트별로 클릭을 했을때 보여주고 해당 음원들을 눌렀을때
+                        <br />
+                        실제로 재생되도록 하였습니다.
+                        </p>
+                        <div className="section6p5_button_cont">
+                        <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
+                            CODE
+                        </a>
+                        <a href="https://react-pick.netlify.app">VIEW</a>
+                        </div>
                     </div>
                 </div>
-                </div>
+
                 <div>
-                <img
-                    className="screenshot s5p5_4"
-                    src={section5p5_screenshot_02}
-                    alt=""
-                />
-                <div className="site_type_02_desc">
-                    <h2>Sumz</h2>
-                    <div className="project_type">
-                    <span>개인 프로젝트</span>
-                    </div>
-                    <p>
-                    <strong>
-                        Sumz는 우리가 일상 생활에서 보는 뉴스 본문들을
+                    <img
+                        className="screenshot s5p5_4"
+                        src={section5p5_screenshot_02}
+                        alt=""
+                    />
+                    <div className="site_type_02_desc">
+                        <h2>Sumz</h2>
+                        <div className="project_type">
+                        <span>개인 프로젝트</span>
+                        </div>
+                        <p>
+                        <strong>
+                            Sumz는 우리가 일상 생활에서 보는 뉴스 본문들을
+                            <br />
+                            요약해주는 사이트입니다.
+                        </strong>
                         <br />
-                        요약해주는 사이트입니다.
-                    </strong>
-                    <br />
-                    <br />
-                    화면 가운데에 본인이 요약을 원하는 뉴스 기사나 본문을 가지고 있는
-                    <br />
-                    링크를 넣고 엔터를 누르면 하단에 요약된 문단이 나오고 요약된
-                    <br />
-                    문단의 기록을 볼 수 있도록 input 하단에 기록들을 배치하였습니다.
-                    </p>
-                    <div className="section6p5_button_cont">
-                    <a href="https://github.com/kimsangjunv1/-React-OpenAI-Summarizer-website">
-                        CODE
-                    </a>
-                    <a href="https://react-sumz.netlify.app/">VIEW</a>
+                        <br />
+                        화면 가운데에 본인이 요약을 원하는 뉴스 기사나 본문을 가지고 있는
+                        <br />
+                        링크를 넣고 엔터를 누르면 하단에 요약된 문단이 나오고 요약된
+                        <br />
+                        문단의 기록을 볼 수 있도록 input 하단에 기록들을 배치하였습니다.
+                        </p>
+                        <div className="section6p5_button_cont">
+                        <a href="https://github.com/kimsangjunv1/-React-OpenAI-Summarizer-website">
+                            CODE
+                        </a>
+                        <a href="https://react-sumz.netlify.app/">VIEW</a>
+                        </div>
                     </div>
                 </div>
-                </div>
+
                 <div>
-                <img
-                    className="screenshot s5p5_7"
-                    src={section5p5_screenshot_03}
-                    alt=""
-                />
-                <div className="site_type_03_desc">
-                    <h2>Car Hub</h2>
-                    <div className="project_type">
-                    <span>개인 프로젝트</span>
-                    </div>
-                    <p>
-                    <strong>
-                        Car Hub는 제조사별 차량들의 모습과
+                    <img
+                        className="screenshot s5p5_7"
+                        src={section5p5_screenshot_03}
+                        alt=""
+                    />
+                    <div className="site_type_03_desc">
+                        <h2>Car Hub</h2>
+                        <div className="project_type">
+                        <span>개인 프로젝트</span>
+                        </div>
+                        <p>
+                        <strong>
+                            Car Hub는 제조사별 차량들의 모습과
+                            <br />
+                            상세 정보를 알 수 있는 사이트 입니다.
+                        </strong>
                         <br />
-                        상세 정보를 알 수 있는 사이트 입니다.
-                    </strong>
-                    <br />
-                    <br />
-                    Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
-                    <br />
-                    넘겨주고 타입스크립트를 활용함으로써 각 props와 가공받아야 할
-                    <br />
-                    데이터들의 타입이 제대로 지켜질 수 있도록 하였으며
-                    <br />
-                    <br />
-                    제조사 및 차량별로 검색 가능하도록 필터링을 거쳐 하단에 각
-                    <br />
-                    제조사별 차량들의 모습이 나오고 제조사별 차량을 누르면 상세정보가
-                    <br />
-                    나오도록 하였습니다.
-                    </p>
-                    <div className="section6p5_button_cont">
-                    <a href="https://github.com/kimsangjunv1/-React-Car-Showcase">
-                        CODE
-                    </a>
-                    <a href="#">VIEW(수정중)</a>
+                        <br />
+                        Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
+                        <br />
+                        넘겨주고 타입스크립트를 활용함으로써 각 props와 가공받아야 할
+                        <br />
+                        데이터들의 타입이 제대로 지켜질 수 있도록 하였으며
+                        <br />
+                        <br />
+                        제조사 및 차량별로 검색 가능하도록 필터링을 거쳐 하단에 각
+                        <br />
+                        제조사별 차량들의 모습이 나오고 제조사별 차량을 누르면 상세정보가
+                        <br />
+                        나오도록 하였습니다.
+                        </p>
+                        <div className="section6p5_button_cont">
+                        <a href="https://github.com/kimsangjunv1/-React-Car-Showcase">
+                            CODE
+                        </a>
+                        <a href="#">VIEW(수정중)</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
             {/* 컨텐츠 END */}

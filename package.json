@@ -17,6 +17,7 @@
     "lenis": "^1.1.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-player": "^2.16.0",
     "react-router-dom": "^6.4.5"
   },
   "devDependencies": {

@@ -95,8 +95,8 @@ main {
 
           &::after {
             content: "";
-            background: var(--color-brand-500);
-            filter: blur(90px);
+            background: white;
+            filter: blur(152px);
             width: calc(0.4rem * 100);
             height: calc(0.4rem * 100);
             position: absolute;
@@ -419,6 +419,13 @@ main {
     &#awwwards {
       width: auto;
       min-height: auto;
+      
+      > a {
+        > p {
+          display: none;
+        }
+      }
+
     }
   }
 
