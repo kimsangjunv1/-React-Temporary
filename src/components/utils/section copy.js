@@ -51,7 +51,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            "#site .container-title",
+            ".section6p5_title",
             {
             transform: "skew(5deg,5deg) rotate(360deg)",
             yPercent: "50",
@@ -68,7 +68,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-01 .screenshot",
+            ".s5p5_1",
             {
             transform: "skew(346deg, 354deg) rotate(340deg)",
             yPercent: "50",
@@ -85,7 +85,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-01 .desc",
+            ".site_type_01_desc",
             {
             transform: "skew(0deg, 0deg) rotate(340deg)",
             yPercent: "100",
@@ -102,7 +102,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-02 .screenshot",
+            ".s5p5_4",
             {
             transform: "skew(19deg, 10deg) rotate(340deg)",
             yPercent: "50",
@@ -119,7 +119,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-02 .desc",
+            ".site_type_02_desc",
             {
             transform: "skew(340deg, 360deg) rotate(340deg)",
             yPercent: "100",
@@ -136,7 +136,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-03 .screenshot",
+            ".s5p5_7",
             {
             transform: "skew(346deg, 354deg) rotate(340deg)",
             yPercent: "50",
@@ -153,7 +153,7 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".item.project-03 .desc",
+            ".site_type_03_desc",
             {
             transform: "skew(0deg, 0deg) rotate(340deg)",
             yPercent: "100",

@@ -255,7 +255,7 @@ main {
 
     &#site {
       position: relative !important;
-      height: 210vw !important;
+      height: calc((100vh * 3) + 50vh);
       background: #161c29;
       overflow: hidden;
     
@@ -263,24 +263,34 @@ main {
       &::after {
         position: absolute;
         content: "";
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        z-index: 1;
       }
     
       &::before {
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 55vw;
         background: linear-gradient(180deg, #161c29 10%, transparent);
-        z-index: 1;
       }
     
       &::after {
         bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 55vw;
         background: linear-gradient(0deg, #15152d 10%, transparent);
-        z-index: 1;
+      }
+
+      .container-title {
+        color: #fff;
+        z-index: 1111111;
+        position: absolute;
+        top: 8.2vw;
+        left: 18.2vw;
+        font-size: 5.5vw;
+        font-weight: 100;
+      
+        &em {
+          font-weight: 900;
+        }
       }
     }
 
@@ -1596,10 +1606,6 @@ h1 {
   left: 80vw;
 }
 
-.screenshot {
-  position: absolute;
-  width: 22vw;
-}
 .s5p5_1 {
   top: 30vw;
   left: 50vw;
@@ -1675,85 +1681,87 @@ h1 {
   opacity: 0.5;
 }
 
-.site_type_01_desc,
-.site_type_02_desc,
-.site_type_03_desc,
-.site_type_04_desc,
-.site_type_05_desc,
-.site_type_06_desc,
-.site_type_07_desc {
-  position: absolute;
-  z-index: 1000;
-
-  h2 {
-    font-size: 2.4vw;
-    font-weight: 900;
-    text-transform: uppercase;
+.item {
+  // 공통
+  .screenshot {
+    position: absolute;
+    z-index: 2;
+    width: calc(50% - (1.6rem * 2));
+    box-shadow: 0 50px 70px -30px rgba(0, 0, 0, 0.5);
   }
-
-  > p {
-    font-size: 1.2vw;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: #fff;
-    line-height: 1.5;
-
-    strong {
+  .desc {
+    position: absolute;
+    z-index: 1000;
+  
+    h2 {
+      font-size: 2.4vw;
       font-weight: 900;
-      font-size: 1.6vw;
+      text-transform: uppercase;
     }
-  }
-
-  .project_type {
-    margin-bottom: 10px;
-
-    span {
-      &:first-child {
-        background: white;
-        color: black;
-        padding: 2px 5px;
-        margin-right: 10px;
-        border-radius: 0.4rem;
+  
+    > p {
+      font-size: 1.2vw;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      color: #fff;
+      line-height: 1.5;
+  
+      strong {
+        font-weight: 900;
+        font-size: 1.6vw;
+      }
+    }
+  
+    .type {
+      margin-bottom: 10px;
+  
+      span {
+        &:first-child {
+          background: white;
+          color: black;
+          padding: 2px 5px;
+          margin-right: 10px;
+          border-radius: 0.4rem;
+        }
       }
     }
   }
+
+  // 프로젝트 순서대로
+  &.project-01 {
+    .screenshot {
+      top: 20%;
+      right: 2.4rem;
+    }
+    .desc {
+      top: 20%;
+      left: 2.4rem;
+    }
+  }
+
+  &.project-02 {
+    .screenshot {
+      top: 50%;
+      left: 2.4rem;
+    }
+    .desc {
+      top: 50%;
+      right: 1.6rem;
+    }
+  }
+
+  &.project-03 {
+    .screenshot {
+      top: 80%;
+      right: 10rem;
+    }
+    .desc {
+      top: 80%;
+      left: 10rem;
+    }
+  }
 }
 
-.site_type_01_desc {
-  top: 32.2vw;
-  left: 21vw;
-  transform: skew(3deg, 3deg);
-}
-.site_type_02_desc {
-  top: 91vw;
-  left: 53vw;
-  transform: skew(356deg, 358deg);
-}
-.site_type_03_desc {
-  top: 169.2vw;
-  left: 52vw;
-  transform: skew(3deg, 3deg);
-}
-.site_type_04_desc {
-  top: 59.2vw;
-  left: 8vw;
-  transform: skew(3deg, 3deg);
-}
-.site_type_05_desc {
-  top: 108vw;
-  left: 44vw;
-  transform: skew(356deg, 358deg);
-}
-.site_type_06_desc {
-  top: 169.2vw;
-  left: 62vw;
-  transform: skew(3deg, 3deg);
-}
-.site_type_07_desc {
-  top: 230.2vw;
-  left: 11vw;
-  transform: skew(3deg, 3deg);
-}
 
 .section6p5_button_cont {
   display: flex;
@@ -1785,19 +1793,6 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-}
-.section6p5_static {
-  color: #fff;
-  z-index: 1111111;
-  position: absolute;
-  top: 8.2vw;
-  left: 18.2vw;
-  font-size: 5.5vw;
-  font-weight: 100;
-
-  &em {
-    font-weight: 900;
-  }
 }
 
 // ---
