@@ -20,13 +20,12 @@ article {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-    
-            > img {
-                -webkit-animation: rubberBand 1.1s alternate 0s infinite;
-                animation: rubberBand 1.1s alternate 0s infinite;
-                animation-timing-function: cubic-bezier(1, 0.36, 0.4, 1.13);
-            }
-            
+        }
+        
+        .lama_loading {
+            -webkit-animation: rubberBand 1.1s alternate 0s infinite;
+            animation: rubberBand 1.1s alternate 0s infinite;
+            animation-timing-function: cubic-bezier(1, 0.36, 0.4, 1.13);
         }
 
         .list,

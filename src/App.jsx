@@ -32,12 +32,30 @@ const App = () => {
 	const isMobile = useMatchMedia("(max-width: 768px)");
     const { isLoaded, loadingCount } = useRouteLoading();
     const [ isVisible, setIsVisible ] = useState(false);
+
+    const [ isChange, setIsChange ] = useState(true);
     
     useEffect(() => {
         // !isMobile && Animation.layout.main();
         Animation.layout.main()
         isVisible && setIsVisible(!isVisible);
     }, [isMobile])
+
+    useEffect(() => {
+        // 미디어 쿼리 변화 감지
+        window.addEventListener('resize',(e) => {
+            if(isChange){
+                setIsChange(false);
+                console.log("asdasdasd", isChange);
+
+                setTimeout(() => {
+                    console.log("실행!");
+                    setIsChange(true);
+
+                }, 5000);
+            }
+        });
+    }, [])
 
     useEffect(() => {
         if (isLoaded) {

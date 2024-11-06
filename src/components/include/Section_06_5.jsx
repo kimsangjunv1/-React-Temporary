@@ -5,7 +5,6 @@ const Section_06_5 = () => {
     // <!-- 섹션 6.5 : 자바스크립트 이펙트와 게임 이펙트 사이 공간 -->
     <section className="divider type-02">
       <svg
-        className="editorial editorial_two"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"

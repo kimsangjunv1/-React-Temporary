@@ -16,7 +16,7 @@ const Section05 = () => {
   return (
     // <!-- 섹션 5 : DOCS -->
     <section id="reference" className="pin4">
-      <div className="section5_fixed">
+      <div className="container-title">
         <h2>
           REFERENCE <em>BOOK</em>
         </h2>

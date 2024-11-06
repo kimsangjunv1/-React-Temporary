@@ -21,17 +21,17 @@ const gsaps = () => {
 
     // 게임 이펙트
     // 개별 아이템 하나하나가 다 섹션
-    let sections2 = gsap.utils.toArray(".panel2");
-    gsap.to(sections2, {
-        xPercent: -100 * (sections2.length - 1),
-        ease: "none",
-        scrollTrigger: {
-        trigger: "#reference",
-        pin: true,
-        scrub: 1,
-        end: "+=11000",
-        },
-    });
+    // let sections2 = gsap.utils.toArray(".panel2");
+    // gsap.to(sections2, {
+    //     xPercent: -100 * (sections2.length - 1),
+    //     ease: "none",
+    //     scrollTrigger: {
+    //     trigger: "#reference",
+    //     pin: true,
+    //     scrub: 1,
+    //     end: "+=11000",
+    //     },
+    // });
 };
 
 export default gsaps;

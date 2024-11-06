@@ -203,8 +203,379 @@ export const data = {
         },
     ],
 
-    // 섹션 5
-    projects: [
+    // 개인 프로젝트
+    personal: [
+        {
+            title: "팬덤박스",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-fdmbox",
+            feature: {
+                name: "작업 기여도",
+                description: [
+                    "개선 사항에 대한 피드백을 열린 마음으로 받아들이고, 이를 바탕으로 구체적이고 실질적인 해결책을 제안하여 프로젝트의 완성도를 높였습니다.",
+                    "PC 및 모바일에 최적화된 모든 서비스 페이지의 디자인을 책임졌습니다.",
+                    "게이미피케이션 요소에 집중하여, 사용자 참여를 유도하는 디자인과 개발을 성공적으로 구현했습니다.",
+                    "웹 표준 및 접근성 규정을 준수하며 퍼블리싱을 수행, 다양한 사용자들이 쉽게 접근할 수 있는 환경을 조성했습니다.",
+                    "세분화되어 있던 적응형 웹 구조를 반응형 웹으로 전환하여, 유지보수 및 작업 효율성을 크게 개선했습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "모바일",
+                        "반응형"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "사내 서비스",
+                    ]
+                },
+                {
+                    name: "참여도",
+                    description: [
+                        "프론트 60%",
+                        "디자인 100%"
+                    ]
+                },
+                {
+                    name: "프레임워크",
+                    description: [
+                        "Laravel"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "Vite",
+                        "Swiper",
+                        "Bootstrap"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-fdmbox-01",
+                "img-screenshot-fdmbox-02",
+                "img-screenshot-fdmbox-03",
+                "img-screenshot-fdmbox-04",
+                "img-screenshot-fdmbox-05",
+            ],
+            url:{
+                live: "https://fdmbox.com",
+                github: "",
+                figma: "",
+            }
+        },
+        {
+            title: "메이즈 공식 사이트",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-maze",
+            feature: {
+                name: "작업 기여도",
+                description: [
+                    "모든 서비스 페이지의 UI/UX 디자인을 책임지고, 사용자의 경험을 최적화하기 위한 직관적이고 일관된 인터페이스를 설계했습니다.",
+                    "추후 추가될 기능과 컨텐츠를 고려하여 서브 페이지를 효율적으로 확장할 수 있는 템플릿 기반의 구조로 구현했습니다.",
+                    "기업의 브랜드 아이덴티티를 반영하여 사용자가 쉽게 인식하고 기억에 남을 수 있도록 디자인에 세심한 주의를 기울였습니다.",
+                    "모든 페이지를 반응형으로 개발하여 다양한 디바이스에서 일관된 사용자 경험을 제공하였습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "반응형",
+                        "PC",
+                        "모바일",
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "사내 사이드 프로젝트"
+                    ]
+                },
+                {
+                    name: "참여도",
+                    description: [
+                        "프론트 100%",
+                        "디자인 100%"
+                    ]
+                },
+                {
+                    name: "프레임워크",
+                    description: [
+                        "Next JS"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "Framer-Motion",
+                        "Matter JS",
+                        "Swiper",
+                        "Zustand"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-maze-01",
+                "img-screenshot-maze-02",
+                "img-screenshot-maze-03",
+                "img-screenshot-maze-04",
+                "img-screenshot-maze-05",
+            ],
+            url:{
+                live: "https://maze.games",
+                github: "",
+                figma: "",
+            }
+        },
+        {
+            title: "픽클!",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-pickle",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "날씨에 따라 추천되는 음악을 들을 수도 있고 서버 자체에 저장되어 있는 음악을 들을수도 있는 음악 사이트 픽클! 입니다.",
+                    "웹 표준과 접근성을 준수하여 다양한 사용자가 서비스에 쉽게 접근할 수 있도록 퍼블리싱 작업을 진행했습니다.",
+                    "Zustand를 활용해 음악 재생 및 재생 목록 상태를 중앙에서 효율적으로 관리하여, 사용자의 경험을 향상시켰습니다.",
+                    "외부 API를 활용하여 실시간으로 음악 데이터를 수집하고, 이를 기반으로 사용자가 다양한 음악을 검색하고 재생할 수 있는 기능을 구현했습니다.",
+                    "수집된 음악 데이터를 MongoDB에 저장 및 관리하여, 데이터의 지속적인 보존과 사용자 맞춤형 플레이리스트 기능을 제공했습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "토이 프로젝트"
+                    ]
+                },
+                {
+                    name: "기타",
+                    description: [
+                        "Shazam API",
+                        "Mongo DB API"
+                    ]
+                },
+                {
+                    name: "프레임워크",
+                    description: [
+                        "Next JS"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "MongoDB",
+                        "Zustand",
+                        "Swiper",
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-pickle-01",
+                "img-screenshot-pickle-02",
+                "img-screenshot-pickle-03",
+                "img-screenshot-pickle-04",
+                "img-screenshot-pickle-05",
+            ],
+            url:{
+                live: "https://pickle-music.netlify.app/home",
+                github: "https://github.com/kimsangjunv1/-NextJS-Pickle",
+                figma: "",
+            }
+        },
+        {
+            title: "플레이그라운드",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-playground",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "YouTube API를 통해 실시간 영상 데이터를 불러와 최신 콘텐츠를 제공했습니다.",
+                    "Zustand로 사용자가 선택한 영상을 목록에 저장하고 쉽게 접근할 수 있도록 상태 관리를 구현했습니다.",
+                    "YouTube 영상 검색 기능을 최적화해 사용자가 원하는 콘텐츠를 쉽게 찾을 수 있게 했습니다.",
+                    "YouTube 채널 정보를 불러와 사용자에게 상세한 채널 정보를 제공했습니다.",
+                    "실시간 댓글 확인 기능을 통해 사용자들이 영상 관련 의견을 확인하고 참여할 수 있도록 했습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "토이 프로젝트"
+                    ]
+                },
+                {
+                    name: "기타",
+                    description: [
+                        "Youtube API"
+                    ]
+                },
+                {
+                    name: "메인",
+                    description: [
+                        "React"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "Vite"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-playground-01",
+                "img-screenshot-playground-02",
+                "img-screenshot-playground-03",
+            ],
+            url:{
+                live: "https://playground-r.netlify.app",
+                github: "https://github.com/kimsangjunv1/-React-Playground",
+                figma: "",
+            }
+        },
+        {
+            title: "포트폴리오",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-portfolio",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "포트폴리오를 보는 사용자들에게 인터렉티브 하면서도 원하는 정보를 쉽게 전달할 수 있도록 고려",
+                    "다양한 모습의 캐릭터를 중간중간 삽입해 순간순간의 장면이 기억에 남을 수 있도록 구성하였습니다.",
+                    "GSAP와 Framer-Motion을 통해 인터렉티브한 섹션들을 구성하였습니다.",
+                    "모든 내용을 손쉽게 관리(수정, 삭제)하기 위해 하나의 js에 중앙관리화 하였습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC",
+                        "모바일"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "사이드 프로젝트"
+                    ]
+                },
+                {
+                    name: "참여도",
+                    description: [
+                        "프론트 100%",
+                        "디자인 100%"
+                    ]
+                },
+                {
+                    name: "메인",
+                    description: [
+                        "React"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "GSAP",
+                        "Framer-Motion",
+                        "Lenis"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-portfolio-01",
+                "img-screenshot-portfolio-02",
+                "img-screenshot-portfolio-03",
+                "img-screenshot-portfolio-04",
+            ],
+            url:{
+                live: "https://portfoliosj-react.netlify.app/",
+                github: "https://github.com/kimsangjunv1/-React-Portfolio",
+                figma: "",
+            }
+        },
+        {
+            title: "CODi_Agit. | 코디 아지트.",
+            desc: "좋아하는것, 공부한것, 기록해두고 싶은것을 올리기위한 저만의 웹사이트 입니다.",
+            imgSrc:"img-project-codiagit",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "주어진 권한에 따라 글 편집 권한이 주어집니다.",
+                    "게스트 로그인을 통해 회원가입 없이도 접속이 가능합니다.",
+                    "SEO 최적화를 위한 시멘틱 태그 배치 및 OG 정보를 최적화 했습니다.",
+                    "좋아요 및 로그인 횟수 별 회원 등급이 부여 됩니다.(개발중)",
+                    "개인별 댓글 작성이 가능합니다.(개발중)",
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "토이 프로젝트"
+                    ]
+                },
+                {
+                    name: "기타",
+                    description: [
+                        "현재 개발 진행중"
+                    ]
+                },
+                {
+                    name: "메인",
+                    description: [
+                        "PHP"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "Sun Editor",
+                        "Lenis",
+                        "SCSS"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-codiagit-01",
+                "img-screenshot-codiagit-02",
+                "img-screenshot-codiagit-03",
+                "img-screenshot-codiagit-04"
+            ],
+            url:{
+                live: "https://codi-agit.com",
+                github: "https://github.com/kimsangjunv1/-PHP-CODi_Agit.",
+                figma: "",
+            }
+        },
+    ],
+
+    // 팀, 그룹 프로젝트
+    team: [
         {
             title: "팬덤박스",
             desc: "asdasdasdas",

@@ -26,25 +26,24 @@ const section = () => {
     });
 
     ScrollTrigger.create({
-        trigger: ".section5_fixed",
+        trigger: "#reference .container-title",
         scrub: 1,
         animation: gsap.fromTo(
-        ".section5_fixed",
+        "#reference .container-title",
         {
             scale: (1.3, 1.3),
             opacity: 0,
-            transformOrigin: "900px 18px",
             transform: "translate(-50%, -50%)",
         },
         {
             scale: 1,
             opacity: 1,
-            transformOrigin: "50% 0%",
-            translate3d: "0,-25px,0",
             transform: "translate(-50%, -50%)",
         }
         ),
     });
+
+    // =============================
 
     ScrollTrigger.create({
         trigger: "#site",
@@ -53,11 +52,11 @@ const section = () => {
         animation: gsap.fromTo(
             "#site .container-title",
             {
-            transform: "skew(5deg,5deg) rotate(360deg)",
+            transform: "translateX(-50%) skew(5deg,5deg) rotate(360deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(37deg, 349deg) rotate(60deg)",
+            transform: "translateX(-50%) skew(37deg, 349deg) rotate(60deg)",
             yPercent: "500",
             }
         ),
@@ -70,11 +69,11 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-01 .screenshot",
             {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(346deg, 354deg) rotate(340deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
+            transform: "translateX(-50%) skew(336deg, 334deg) rotate(20deg)",
             yPercent: "0",
             }
         ),
@@ -87,11 +86,11 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-01 .desc",
             {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(0deg, 0deg) rotate(340deg)",
             yPercent: "100",
             },
             {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
+            transform: "translateX(-50%) skew(3deg, 3deg) rotate(10deg)",
             yPercent: "0",
             }
         ),
@@ -104,11 +103,11 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-02 .screenshot",
             {
-            transform: "skew(19deg, 10deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(19deg, 10deg) rotate(340deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(10deg, 29deg) rotate(20deg)",
+            transform: "translateX(-50%) skew(10deg, 29deg) rotate(20deg)",
             yPercent: "0",
             }
         ),
@@ -121,11 +120,11 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-02 .desc",
             {
-            transform: "skew(340deg, 360deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(340deg, 360deg) rotate(340deg)",
             yPercent: "100",
             },
             {
-            transform: "skew(360deg, 340deg) rotate(20deg)",
+            transform: "translateX(-50%) skew(360deg, 340deg) rotate(20deg)",
             yPercent: "0",
             }
         ),
@@ -138,11 +137,11 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-03 .screenshot",
             {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(346deg, 354deg) rotate(340deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
+            transform: "translateX(-50%) skew(336deg, 334deg) rotate(20deg)",
             yPercent: "0",
             }
         ),
@@ -155,61 +154,31 @@ const section = () => {
         animation: gsap.fromTo(
             ".item.project-03 .desc",
             {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(0deg, 0deg) rotate(340deg)",
             yPercent: "100",
             },
             {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
+            transform: "translateX(-50%) skew(3deg, 3deg) rotate(10deg)",
             yPercent: "0",
             }
         ),
     });
 
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".section6p7_title", {
-                transform: "skew(5deg,5deg) rotate(360deg)",
-                yPercent: "150",
-            }, {
-                transform: "skew(37deg, 349deg) rotate(40deg)",
-                yPercent: "-3000",
-            }
-        ),
-    });
+    // ===========================
 
     ScrollTrigger.create({
         trigger: "#project",
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".s6p5_1",
+            "#project .container-title",
             {
-            transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
-            yPercent: "-1500",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_2",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
+            transform: "translateX(-50%) skew(5deg,5deg) rotate(360deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(336deg, 334deg) rotate(20deg)",
-            yPercent: "0",
+            transform: "translateX(-50%) skew(37deg, 349deg) rotate(60deg)",
+            yPercent: "500",
             }
         ),
     });
@@ -219,133 +188,106 @@ const section = () => {
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".site_type_04_desc",
+            "#project .item.project-01 .screenshot",
             {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_4",
-            {
-            transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
-            yPercent: "-1500",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_05_desc",
-            {
-            transform: "skew(0deg, 0deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(3deg, 3deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_7",
-            {
-            transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
-            yPercent: "-1500",
-            }
-        ),
-    });
-    ScrollTrigger.create({
-        trigger: "#project",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".site_type_06_desc",
-            {
-            transform: "skew(340deg, 340deg) rotate(340deg)",
-            yPercent: "100",
-            },
-            {
-            transform: "skew(0deg, 0deg) rotate(10deg)",
-            yPercent: "0",
-            }
-        ),
-    });
-
-    ScrollTrigger.create({
-        trigger: ".s6p5_10",
-        scrub: 1,
-
-        animation: gsap.fromTo(
-            ".s6p5_10",
-            {
-            transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
+            transform: "translateX(-50%) skew(346deg, 354deg) rotate(340deg)",
             yPercent: "50",
             },
             {
-            transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
+            transform: "translateX(-50%) skew(336deg, 334deg) rotate(20deg)",
             yPercent: "0",
             }
         ),
     });
-    ScrollTrigger.create({
-        trigger: ".s6p5_10",
-        scrub: 1,
 
-        animation: gsap.fromTo(
-            ".s6p5_11",
-            {
-            transform: "skew(346deg, 354deg) rotate(340deg)",
-            yPercent: "50",
-            },
-            {
-            transform: "skew(336deg, 344deg) rotate(20deg)",
-            yPercent: "0",
-            }
-        ),
-    });
     ScrollTrigger.create({
         trigger: "#project",
         scrub: 1,
 
         animation: gsap.fromTo(
-            ".site_type_07_desc",
+            "#project .item.project-01 .desc",
             {
-            transform: "skew(0deg, 0deg) rotate(210deg)",
+            transform: "translateX(-50%) skew(0deg, 0deg) rotate(340deg)",
             yPercent: "100",
             },
             {
-            transform: "skew(3deg, 3deg) rotate(360deg)",
+            transform: "translateX(-50%) skew(3deg, 3deg) rotate(10deg)",
             yPercent: "0",
             }
         ),
     });
+
+    ScrollTrigger.create({
+        trigger: "#project",
+        scrub: 1,
+
+        animation: gsap.fromTo(
+            "#project .item.project-02 .screenshot",
+            {
+            transform: "translateX(-50%) skew(19deg, 10deg) rotate(340deg)",
+            yPercent: "50",
+            },
+            {
+            transform: "translateX(-50%) skew(10deg, 29deg) rotate(20deg)",
+            yPercent: "0",
+            }
+        ),
+    });
+
+    ScrollTrigger.create({
+        trigger: "#project",
+        scrub: 1,
+
+        animation: gsap.fromTo(
+            "#project .item.project-02 .desc",
+            {
+            transform: "translateX(-50%) skew(340deg, 360deg) rotate(340deg)",
+            yPercent: "100",
+            },
+            {
+            transform: "translateX(-50%) skew(360deg, 340deg) rotate(20deg)",
+            yPercent: "0",
+            }
+        ),
+    });
+
+    ScrollTrigger.create({
+        trigger: "#project",
+        scrub: 1,
+
+        animation: gsap.fromTo(
+            "#project .item.project-03 .screenshot",
+            {
+            transform: "translateX(-50%) skew(346deg, 354deg) rotate(340deg)",
+            yPercent: "50",
+            },
+            {
+            transform: "translateX(-50%) skew(336deg, 334deg) rotate(20deg)",
+            yPercent: "0",
+            }
+        ),
+    });
+
+    ScrollTrigger.create({
+        trigger: "#project",
+        scrub: 1,
+
+        animation: gsap.fromTo(
+            "#project .item.project-03 .desc",
+            {
+            transform: "translateX(-50%) skew(0deg, 0deg) rotate(340deg)",
+            yPercent: "100",
+            },
+            {
+            transform: "translateX(-50%) skew(3deg, 3deg) rotate(10deg)",
+            yPercent: "0",
+            }
+        ),
+    });
+
+    //===========================
+
+
 
     ScrollTrigger.create({
         scrub: 1,

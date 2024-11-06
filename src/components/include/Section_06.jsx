@@ -1,8 +1,13 @@
+import { useEffect, useLayoutEffect } from "react";
+import ReactPlayer from "react-player";
+import Animation from "@/components/utils/animation";
+
 import section5p5_light from "./../../assets/img/section5p5_light.svg";
 
-import ReactPlayer from "react-player";
-
-const Section_06 = () => {
+const Section_06 = ({isLoaded}) => {
+    useLayoutEffect(() => {
+        Animation.section06.default();
+    }, [isLoaded])
     return (
         <section id="site">
             {/* 타이틀 */}
@@ -14,7 +19,7 @@ const Section_06 = () => {
             {/* 컨텐츠 */}
             <section className="container-contents">
                 {Array(3).fill(0).map((e, i) => 
-                    <div className={`item project-0${i + 1}`}>
+                    <div className={`item project-0${i + 1}`} key={i}>
                         <ReactPlayer
                             className="screenshot"
                             url="/videos/section/06/video-pickle.mp4"
@@ -23,6 +28,8 @@ const Section_06 = () => {
                             muted={true} // 자동 재생 on
                             controls={false} // 플레이어 컨트롤 노출 여부
                             light={false} // 플레이어 모드
+                            width={"54.0rem"}
+                            height={"fit-content"}
                             config={{
                                 file: {
                                     attributes: {
@@ -64,7 +71,7 @@ const Section_06 = () => {
                                 실제로 재생되도록 하였습니다.
                             </p>
 
-                            <div>
+                            <div className="link">
                                 <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">CODE</a>
                                 <a href="https://react-pick.netlify.app">VIEW</a>
                             </div>

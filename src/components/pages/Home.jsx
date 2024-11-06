@@ -21,6 +21,8 @@ import Section_14 from "@/components/include/Section_14";
 import Section_15 from "@/components/include/Section_15";
 import Section_16 from "@/components/include/Section_16";
 
+import { data } from "@/components/utils/data";
+
 const Home = ({ isMobile, isLoaded }) => {
 	return (
 		<Fragment>
@@ -32,7 +34,7 @@ const Home = ({ isMobile, isLoaded }) => {
 			<Section05 />
 			<Section_05_5 />
 
-			<Section_06 />
+			<Section_06 isLoaded={isLoaded} />
 			<Section_06_5 />
 			<Section_07 isLoaded={isLoaded}/>
 

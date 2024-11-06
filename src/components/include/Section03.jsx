@@ -8,13 +8,13 @@ const Section03 = ({ isLoaded }) => {
     
     return (
         <section id="javascript">
-            <section className="section3_fixed">
+            <section className="container-title">
                 <h2>
                 JAVASCRIPT <em>PRACTICE</em>
                 </h2>
             </section>
 
-            <section className="panel custom_02">
+            <section>
                 <img
                     className="section3_item_bottom2"
                     src="/images/section/03/img-deco-bottom.webp"
