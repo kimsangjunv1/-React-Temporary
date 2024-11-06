@@ -5,56 +5,53 @@ import section9_logo from "./../../assets/img/section9_logo.png";
 import section9_logo_bg from "./../../assets/img/section9_logo_bg.jpg";
 import section9_screenshot_01 from "./../../assets/img/section9_screenshot_01.png";
 
+
 const Section_09 = () => {
-  return (
-    // <!-- REACT API TMDB : section9 -->
-    <section
-      className="vr1"
-      style={{ background: "#00244dd4" }}
-    >
-      <div>
-        <img className="section9_lama" src={section9_lama} alt="" />
+    return (
+        <section id="mini">
+            {Array(6).fill(0).map((e, i) =>
+                <section className="item">
+                    <div className="container-inner">
+                        <section className="container-desc">
+                            <img className="deco" src={section9_lama} alt="" />
 
-        <div className="section9_desc_cont">
-          <div className="title_wrap">
-            <p className="title">
-              POPULAR MOVIE
-              <br />
-              <em>WEBSITE</em>
-            </p>
-            <p className="sub_ttitle">REACT</p>
-          </div>
-          <p>
-            Axios를 사용해 RESTful API를 활용하여
-            <br />
-            TMDB에서 제공하는 api를 이용해 검색
-            <br />
-            가능한 영화 목록 웹사이트를 만들었습니다.
-            <br />
-            <br />
-            영화 목록들을 검색하고 검색한 결과를 보여주는 사이트를 만들었습니다.
-          </p>
-          <div className="section_rv_button_cont">
-            <a href="https://github.com/kimsangjunv1/react_api">CODE</a>
-            <a href="https://reactapi11.netlify.app/movie">VIEW</a>
-          </div>
-        </div>
+                            <section>
+                                <h2>POPULAR MOVIE<br /><em>WEBSITE</em></h2>
+                                <p>REACT</p>
+                            </section>
 
-        <div className="section9_logo_cont">
-          <img className="sec8_logo" src={section9_logo} alt="" />
-          <img className="sec8_bg polygon" src={section9_logo_bg} alt="" />
-        </div>
+                            <section>
+                                <p>
+                                    Axios를 사용해 RESTful API를 활용하여
+                                    <br />
+                                    TMDB에서 제공하는 api를 이용해 검색
+                                    <br />
+                                    가능한 영화 목록 웹사이트를 만들었습니다.
+                                    <br />
+                                    <br />
+                                    영화 목록들을 검색하고 검색한 결과를 보여주는 사이트를 만들었습니다.
+                                </p>
+                            </section>
 
-        <div style={{ background: "#161c29e0" }} className="background"></div>
+                            <section>
+                                <a href="https://github.com/kimsangjunv1/react_api">CODE</a>
+                                <a href="https://reactapi11.netlify.app/movie">VIEW</a>
+                            </section>
+                        </section>
 
-        <img
-          className="section9_main_screenshot"
-          src={section9_screenshot_01}
-          alt=""
-        />
-      </div>
-    </section>
-  );
+                        <section className="container-logo">
+                            <img className="main" src={section9_logo} alt="" />
+                            <img className="sub" src={section9_logo_bg} alt="" />
+                        </section>
+
+                        <section className="container-screenshot">
+                            <img src={section9_screenshot_01} alt="" />
+                        </section>
+                    </div>
+                </section>
+            )}
+        </section>
+    );
 };
 
 export default Section_09;

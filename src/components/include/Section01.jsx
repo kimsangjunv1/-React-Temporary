@@ -1,11 +1,16 @@
 import { useEffect } from "react";
 import Animation from "@/components/utils/animation";
 
-const Section01 = () => {
+const Section01 = ({isLoaded}) => {
+    // useEffect(() => {
+    //     if(isLoaded){
+    //         // console.log("실행",isLoaded)
+    //     }
+    // }, [isLoaded])
+    
     useEffect(() => {
-        // !isMobile && Animation.layout.main();
-        Animation.section01.init();
-        Animation.section01.default();
+        // Animation.section01.init();
+        // Animation.section01.default();
     }, [])
     return (
         // 섹션 1 : 메인

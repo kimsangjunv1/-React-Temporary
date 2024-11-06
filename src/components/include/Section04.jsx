@@ -5,7 +5,7 @@ import Animation from "@/components/utils/animation";
 
 const Section04 = () => {
   useEffect(() => {
-      Animation.section04.default();
+      // Animation.section04.default();
   }, [])
   return (
     // <!-- 섹션 4 : 게임 이펙트 -->

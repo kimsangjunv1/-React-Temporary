@@ -6,7 +6,7 @@ import section5p5_light from "./../../assets/img/section5p5_light.svg";
 
 const Section_06 = ({isLoaded}) => {
     useLayoutEffect(() => {
-        Animation.section06.default();
+        // Animation.section06.default();
     }, [isLoaded])
     return (
         <section id="site">
@@ -113,56 +113,56 @@ const Section_06 = ({isLoaded}) => {
                 d="M167.225,-405.89099 C164.603,-398.65299 104.231,-143.03899 262.045,-62.15999 465.309,42.01201 849.658,-73.74299 844.16,135.06701 835.835,451.19401 37.915,155.25001 41.953,528.31601 45.931,896.24901 831.76,583.29201 831.698,897.30501 831.626,1260.47601 80.153,838.99401 83.114,1179.94101 86.191,1534.35201 829.403,1132.75801 831.84,1487.94701 833.08575,1669.58011 614.981,1730.18 418.3078,1746.43668 116.077,1771.418 150.31,1991.163 150.31,1991.163 "
                 />
                 <g id="motionSVG">
-                <svg
-                    id="tractor"
-                    width="132"
-                    height="146"
-                    viewBox="0 0 132 146"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                    d="M98.5439 49.7915C112.374 32.5878 113.47 32.364 109.597 29.0471"
-                    stroke="#68677A"
-                    strokeWidth="7"
-                    strokeLinecap="round"
-                    />
-                    <path
-                    d="M71.1814 5.39111C81.8539 3.77989 48.5392 29.2659 59.5379 35.7102"
-                    stroke="#68677A"
-                    strokeWidth="7"
-                    strokeLinecap="round"
-                    />
-                    <path d="M102.539 91.9551C124.382 88.7743 125.337 89.3563 124.76 84.2901" stroke="#68677A" strokeWidth="7" strokeLinecap="round" />
-                    <rect
-                        width="105"
-                        height="92"
-                        rx="46"
-                        transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5615 28.2759)"
-                        fill="#F4F4F4"
-                        stroke="#F4F4F4"
-                        strokeWidth="17"
+                    <svg
+                        id="tractor"
+                        width="132"
+                        height="146"
+                        viewBox="0 0 132 146"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        d="M98.5439 49.7915C112.374 32.5878 113.47 32.364 109.597 29.0471"
+                        stroke="#68677A"
+                        strokeWidth="7"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray="1 15"
-                    />
-                    <rect
-                        width="97.3032"
-                        height="92"
-                        rx="46"
-                        transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5625 35.8911)"
-                        fill="white"
-                        stroke="white"
-                        strokeWidth="17"
+                        />
+                        <path
+                        d="M71.1814 5.39111C81.8539 3.77989 48.5392 29.2659 59.5379 35.7102"
+                        stroke="#68677A"
+                        strokeWidth="7"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray="1 15"
-                    />
-                    <path d="M67.3047 67.9517C68.9651 67.5547 68.718 64.5234 67.2136 64.5498" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M65.0459 57.7563C66.2927 55.7993 65.7927 52.2993 64.5413 51.358" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M63.0459 78.7563C64.2927 76.7993 63.7927 73.2993 62.5413 72.358" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M92.0818 89.5073C82.5818 106.507 78.0818 98.5073 70.6826 113.725" stroke="#202033" strokeWidth="7" strokeLinecap="round" />
-                </svg>
+                        />
+                        <path d="M102.539 91.9551C124.382 88.7743 125.337 89.3563 124.76 84.2901" stroke="#68677A" strokeWidth="7" strokeLinecap="round" />
+                        <rect
+                            width="105"
+                            height="92"
+                            rx="46"
+                            transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5615 28.2759)"
+                            fill="#F4F4F4"
+                            stroke="#F4F4F4"
+                            strokeWidth="17"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeDasharray="1 15"
+                        />
+                        <rect
+                            width="97.3032"
+                            height="92"
+                            rx="46"
+                            transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5625 35.8911)"
+                            fill="white"
+                            stroke="white"
+                            strokeWidth="17"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeDasharray="1 15"
+                        />
+                        <path d="M67.3047 67.9517C68.9651 67.5547 68.718 64.5234 67.2136 64.5498" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
+                        <path d="M65.0459 57.7563C66.2927 55.7993 65.7927 52.2993 64.5413 51.358" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
+                        <path d="M63.0459 78.7563C64.2927 76.7993 63.7927 73.2993 62.5413 72.358" stroke="#202033" strokeWidth="3" strokeLinecap="round" />
+                        <path d="M92.0818 89.5073C82.5818 106.507 78.0818 98.5073 70.6826 113.725" stroke="#202033" strokeWidth="7" strokeLinecap="round" />
+                    </svg>
                 </g>
             </svg>
             {/* GSAP 모션 패스 END */}

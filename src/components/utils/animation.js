@@ -136,6 +136,22 @@ class Animation {
                 trigger: "#profile",
                 scrub: 1,
                 animation: gsap.fromTo(
+                "#intro h2",
+                {
+                    yPercent: "-50",
+                    filter: "blur(0px)"
+                },
+                {
+                    yPercent: "100",
+                    filter: "blur(20px)"
+                }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: "#profile",
+                scrub: 1,
+                animation: gsap.fromTo(
                 ".dust_01",
                 {
                     transform: "translate(-50%,0%) rotate(0deg)",
@@ -621,13 +637,15 @@ class Animation {
             ScrollTrigger.create({
                 trigger: ".section4_fixed",
                 scrub: 1,
-                animation: gsap.from(".section4_fixed", {
+                animation: gsap.fromTo(
+                ".section4_fixed",
+                {
                     scale: (1.3, 1.3),
                     opacity: 0,
                     transformOrigin: "900px 18px",
                     transform: "translate(0,50px)",
-                }),
-                animation: gsap.to(".section4_fixed", {
+                },
+                {
                     scale: 1,
                     opacity: 1,
                     transformOrigin: "50% 0%",
@@ -662,6 +680,24 @@ class Animation {
         init: () => {},
 
         default: () => {
+            ScrollTrigger.create({
+                trigger: "#reference .container-title",
+                scrub: 1,
+                animation: gsap.fromTo(
+                "#reference .container-title",
+                {
+                    scale: (1.3, 1.3),
+                    opacity: 0,
+                    transform: "translate(-50%, -50%)",
+                },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    transform: "translate(-50%, -50%)",
+                }
+                ),
+            });
+            
             ScrollTrigger.create({
                 scrub: 1,
                 animation: gsap.fromTo(
@@ -698,6 +734,20 @@ class Animation {
         init: () => {},
 
         default: () => {
+            ScrollTrigger.create({
+                trigger: "#site",
+                scrub: 1,
+                animation: gsap.fromTo(
+                    "#site .container-ball",
+                    {
+                        yPercent: "-10",
+                    },
+                    {
+                        yPercent: "10",
+                    }
+                ),
+            });
+
             ScrollTrigger.create({
                 trigger: "#site",
                 scrub: 1,
@@ -826,6 +876,20 @@ class Animation {
             ScrollTrigger.create({
                 trigger: "#project",
                 scrub: 1,
+                animation: gsap.fromTo(
+                    "#project .container-ball",
+                    {
+                        yPercent: "-10",
+                    },
+                    {
+                        yPercent: "10",
+                    }
+                ),
+            });
+
+            ScrollTrigger.create({
+                trigger: "#project",
+                scrub: 1,
         
                 animation: gsap.fromTo(
                     "#project .container-title",
@@ -941,6 +1005,117 @@ class Animation {
                     }
                 ),
             });
+        }
+    }
+
+    static section09 = {
+        init: () => {},
+
+        default: () => {
+            const container = document.querySelector("#mini");
+            const elementItem = container.querySelectorAll(".item");
+
+            // document.querySelectorAll("#mini > section").forEach((slide, i) => {
+            //     const imageWrappers = element.querySelectorAll(".container-inner");
+        
+            //     gsap.fromTo(
+            //         imageWrappers,
+            //         {
+            //             y: "-30vh",
+            //         },
+            //         {
+            //             y: "30vh",
+            //             scrollTrigger: {
+            //                 trigger: slide,
+            //                 scrub: true,
+            //                 start: "top bottom", // 트리거 시작 지점 명시
+            //                 end: "bottom top",   // 트리거 종료 지점 명시
+            //             },
+            //             ease: "none",
+            //         }
+            //     );
+            // });
+            
+
+            elementItem.forEach((element, index) => {
+                const imageWrappers = element.querySelector(".container-inner");
+
+                const elementDeco = element.querySelector(".deco");
+                const elementLogo = element.querySelector(".container-logo");
+
+                const elementLogoMain = elementLogo.querySelector(".main");
+                const elementLogoSub = elementLogo.querySelector(".sub");
+
+                // 솜뭉치
+                ScrollTrigger.create({
+                    trigger: element,
+                    scrub: 0.1,
+                    animation: gsap.fromTo(
+                        elementDeco,
+                        {
+                            rotate: "0",
+                            yPercent: "-500",
+                        },
+                        {
+                            rotate: "+=500",
+                            yPercent: "70",
+                        }
+                    ),
+                });
+            
+                ScrollTrigger.create({
+                    trigger: element,
+                    scrub: 1,
+                    animation: gsap.fromTo(
+                    elementLogoMain,
+                    {
+                        x: "-150%",
+                        y: "-150%",
+                        scale: 0.8,
+                    },
+                    {
+                        x: "0%",
+                        y: "0%",
+                        scale: 1.6,
+                    }
+                    ),
+                });
+    
+                ScrollTrigger.create({
+                    trigger: element,
+                    scrub: 1,
+                    animation: gsap.fromTo(
+                    elementLogoSub,
+                    {
+                        x: "50%",
+                        y: "0%",
+                        backgroundSize: 0,
+                    },
+                    {
+                        x: "20%",
+                        y: "0%",
+                        scale: 1.2,
+                    }
+                    ),
+                });
+
+                gsap.fromTo(
+                    imageWrappers,
+                    {
+                        y: "-30vh",
+                    },
+                    {
+                        y: "30vh",
+                        scrollTrigger: {
+                            trigger: element,
+                            scrub: true,
+                            start: "top bottom", // 트리거 시작 지점 명시
+                            end: "bottom top",   // 트리거 종료 지점 명시
+                        },
+                        ease: "none",
+                    }
+                );
+            })
         }
     }
 

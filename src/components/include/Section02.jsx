@@ -3,7 +3,7 @@ import Animation from "@/components/utils/animation";
 
 const Section02 = () => {
     useEffect(() => {
-        Animation.section02.default();
+        // Animation.section02.default();
     }, [])
 return (
     // 섹션 2 : 김상준 소개

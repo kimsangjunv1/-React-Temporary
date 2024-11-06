@@ -26,7 +26,7 @@ import { data } from "@/components/utils/data";
 const Home = ({ isMobile, isLoaded }) => {
 	return (
 		<Fragment>
-			<Section01 />
+			<Section01 isLoaded={isLoaded} />
 			<Section02 />
 			<Section03 isLoaded={isLoaded}/>
 			<Section_03_5 />
@@ -38,14 +38,7 @@ const Home = ({ isMobile, isLoaded }) => {
 			<Section_06_5 />
 			<Section_07 isLoaded={isLoaded}/>
 
-			<section id="mini">
-				<Section_09 />
-				<Section_10 />
-				<Section_11 />
-				<Section_12 />
-				<Section_13 />
-				<Section_14 />
-			</section>
+			<Section_09 />
 
 			<Section_15 />
 			<Section_16 />

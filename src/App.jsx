@@ -31,8 +31,8 @@ import useRouteLoading from "@/components/hooks/useRouteLoading";
 const App = () => {
 	const isMobile = useMatchMedia("(max-width: 768px)");
     const { isLoaded, loadingCount } = useRouteLoading();
-    const [ isVisible, setIsVisible ] = useState(false);
 
+    const [ isVisible, setIsVisible ] = useState(false);
     const [ isChange, setIsChange ] = useState(true);
     
     useEffect(() => {
@@ -42,27 +42,21 @@ const App = () => {
     }, [isMobile])
 
     useEffect(() => {
-        // 미디어 쿼리 변화 감지
-        window.addEventListener('resize',(e) => {
-            if(isChange){
-                setIsChange(false);
-                console.log("asdasdasd", isChange);
-
-                setTimeout(() => {
-                    console.log("실행!");
-                    setIsChange(true);
-
-                }, 5000);
-            }
-        });
-    }, [])
-
-    useEffect(() => {
         if (isLoaded) {
+            section();
+
             Animation.horizontal.section03();
             Animation.horizontal.section05();
 
-            section();          // 핵심
+            Animation.section01.init();
+            Animation.section01.default();
+            Animation.section02.default();
+            Animation.section03.default();
+            Animation.section04.default();
+            Animation.section05.default();
+            Animation.section06.default();
+            Animation.section07.default();
+            Animation.section09.default();
         }
     }, [isLoaded])
 

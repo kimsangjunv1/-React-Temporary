@@ -3,7 +3,7 @@ import Animation from "@/components/utils/animation";
 
 const Section03 = ({ isLoaded }) => {
     useEffect(() => {
-        Animation.section03.default();
+        // Animation.section03.default();
     }, [isLoaded])
     
     return (
